@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="antialiased">
-      <body className="min-h-screen bg-softwhite text-[#1a1a2e] font-sans">
+      <body className="min-h-screen bg-ink-black text-gray-100 font-sans antialiased">
         <SessionProvider>{children}</SessionProvider>
       </body>
     </html>

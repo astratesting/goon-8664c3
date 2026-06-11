@@ -16,30 +16,30 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/80 backdrop-blur-lg shadow-sm" : "bg-transparent"
+        scrolled ? "bg-ink-black/80 backdrop-blur-lg border-b border-white/5" : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-serif text-2xl font-bold text-gradient">
+        <Link href="/" className="font-heading text-2xl font-bold text-gradient">
           Goon
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+          <a href="#features" className="text-sm text-gray-400 hover:text-white transition-colors">
             Features
           </a>
-          <a href="#how-it-works" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+          <a href="#how-it-works" className="text-sm text-gray-400 hover:text-white transition-colors">
             How It Works
           </a>
-          <a href="#pricing" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+          <a href="#pricing" className="text-sm text-gray-400 hover:text-white transition-colors">
             Pricing
           </a>
-          <a href="#faq" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+          <a href="#faq" className="text-sm text-gray-400 hover:text-white transition-colors">
             FAQ
           </a>
           <Link
             href="/auth/signin"
-            className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+            className="text-sm text-gray-400 hover:text-white transition-colors"
           >
             Sign in
           </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-2 text-gray-400"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -67,12 +67,12 @@ export default function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-lg border-t border-gray-100 px-6 py-6 space-y-4">
-          <a href="#features" onClick={() => setMobileOpen(false)} className="block text-gray-700">Features</a>
-          <a href="#how-it-works" onClick={() => setMobileOpen(false)} className="block text-gray-700">How It Works</a>
-          <a href="#pricing" onClick={() => setMobileOpen(false)} className="block text-gray-700">Pricing</a>
-          <a href="#faq" onClick={() => setMobileOpen(false)} className="block text-gray-700">FAQ</a>
-          <Link href="/auth/signin" onClick={() => setMobileOpen(false)} className="block text-gray-700">Sign in</Link>
+        <div className="md:hidden bg-ink-black/95 backdrop-blur-lg border-t border-white/5 px-6 py-6 space-y-4">
+          <a href="#features" onClick={() => setMobileOpen(false)} className="block text-gray-300 hover:text-white">Features</a>
+          <a href="#how-it-works" onClick={() => setMobileOpen(false)} className="block text-gray-300 hover:text-white">How It Works</a>
+          <a href="#pricing" onClick={() => setMobileOpen(false)} className="block text-gray-300 hover:text-white">Pricing</a>
+          <a href="#faq" onClick={() => setMobileOpen(false)} className="block text-gray-300 hover:text-white">FAQ</a>
+          <Link href="/auth/signin" onClick={() => setMobileOpen(false)} className="block text-gray-300 hover:text-white">Sign in</Link>
           <Link
             href="/auth/signup"
             onClick={() => setMobileOpen(false)}

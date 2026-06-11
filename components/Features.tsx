@@ -63,13 +63,13 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-20 md:py-28 bg-white">
+    <section id="features" className="py-20 md:py-28 bg-ink-black">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4">
+          <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4 text-white">
             Everything you need to trade smarter
           </h2>
-          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Goon combines cutting-edge machine learning with alternative data sources to
             give retail traders an edge that was once reserved for quant desks.
           </p>
@@ -79,13 +79,13 @@ export default function Features() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group p-6 rounded-2xl border border-gray-100 hover:border-sky/30 bg-softwhite hover:bg-white card-glow transition-all duration-300"
+              className="group p-6 rounded-2xl border border-white/5 hover:border-indigo/30 bg-white/[0.02] hover:bg-white/[0.04] card-glow transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-xl gradient-sky-mint flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
-              <h3 className="font-serif text-lg font-semibold mb-2">{feature.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{feature.description}</p>
+              <h3 className="font-heading text-lg font-semibold mb-2 text-white">{feature.title}</h3>
+              <p className="text-sm text-gray-400 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

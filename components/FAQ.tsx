@@ -39,15 +39,15 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-100 last:border-0">
+    <div className="border-b border-white/5 last:border-0">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between py-5 text-left"
         aria-expanded={open}
       >
-        <span className="font-serif text-lg font-semibold pr-4">{question}</span>
+        <span className="font-heading text-lg font-semibold pr-4 text-white">{question}</span>
         <svg
-          className={`w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200 ${
+          className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform duration-200 ${
             open ? "rotate-180" : ""
           }`}
           fill="none"
@@ -59,7 +59,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       </button>
       {open && (
         <div className="pb-5 pr-8">
-          <p className="text-gray-500 leading-relaxed">{answer}</p>
+          <p className="text-gray-400 leading-relaxed">{answer}</p>
         </div>
       )}
     </div>
@@ -71,15 +71,15 @@ export default function FAQ() {
     <section id="faq" className="py-20 md:py-28 gradient-soft">
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4">
+          <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4 text-white">
             Frequently asked questions
           </h2>
-          <p className="text-gray-500 text-lg">
+          <p className="text-gray-400 text-lg">
             Everything you need to know before getting started.
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl p-6 md:p-8 card-glow">
+        <div className="bg-white/[0.03] rounded-2xl p-6 md:p-8 card-glow border border-white/5">
           {faqs.map((faq) => (
             <FAQItem key={faq.question} question={faq.question} answer={faq.answer} />
           ))}
