@@ -67,14 +67,14 @@ export default function Pricing() {
               className={`
                 relative rounded-2xl p-8 border transition-all
                 ${plan.highlight
-                  ? "bg-white/[0.05] border-cobalt/30"
+                  ? "bg-white/[0.05] border-flame-orange/30"
                   : "bg-white/[0.02] border-white/5 hover:border-white/10"
                 }
               `}
             >
               {plan.highlight && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-cobalt text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wide">
+                  <span className="bg-flame-orange text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wide">
                     Most Popular
                   </span>
                 </div>
@@ -96,7 +96,7 @@ export default function Pricing() {
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3 text-sm">
-                    <svg className="w-5 h-5 text-goon-green flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-5 h-5 text-acid-green flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-300">{feature}</span>
@@ -109,7 +109,7 @@ export default function Pricing() {
                 className={`
                   block w-full text-center font-semibold py-3 rounded-xl transition-colors
                   ${plan.highlight
-                    ? "bg-cobalt text-white hover:bg-cobalt/90"
+                    ? "bg-flame-orange text-white hover:bg-flame-orange/90"
                     : "bg-white/5 text-white border border-white/10 hover:border-white/20 hover:bg-white/10"
                   }
                 `}

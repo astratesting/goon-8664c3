@@ -4,7 +4,7 @@ const steps = [
     title: "Select your interests",
     description:
       "Sign up in seconds and pick the stocks or sectors you care about. Build a custom watchlist — no financial expertise needed.",
-    accent: "cobalt",
+    accent: "flame",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
@@ -28,7 +28,7 @@ const steps = [
     title: "Get your prediction",
     description:
       "Receive a clear buy or sell signal with a confidence score and plain-English rationale — delivered to your dashboard in under 60 seconds. You stay in full control.",
-    accent: "cobalt",
+    accent: "flame",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
@@ -38,8 +38,8 @@ const steps = [
 ];
 
 const accentMap: Record<string, { bg: string; text: string; border: string }> = {
-  cobalt: { bg: "bg-cobalt/10", text: "text-cobalt", border: "border-cobalt/20" },
-  green: { bg: "bg-goon-green/10", text: "text-goon-green", border: "border-goon-green/20" },
+  flame: { bg: "bg-flame-orange/10", text: "text-flame-orange", border: "border-flame-orange/20" },
+  green: { bg: "bg-acid-green/10", text: "text-acid-green", border: "border-acid-green/20" },
 };
 
 export default function HowItWorks() {
@@ -49,7 +49,7 @@ export default function HowItWorks() {
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4 text-white">
             From sign-up to your first prediction in{" "}
-            <span className="text-goon-green">60 seconds</span>
+            <span className="text-acid-green">60 seconds</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
             Three steps. No financial background required. Just read and decide.
@@ -87,11 +87,11 @@ export default function HowItWorks() {
         {/* Timer accent */}
         <div className="mt-12 text-center">
           <div className="inline-flex items-center gap-3 bg-white/[0.03] border border-white/5 rounded-full px-6 py-3">
-            <svg className="w-5 h-5 text-goon-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-5 h-5 text-acid-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <span className="text-sm text-gray-300 font-medium">
-              Average time to first prediction: <span className="text-goon-green font-bold">47 seconds</span>
+              Average time to first prediction: <span className="text-acid-green font-bold">47 seconds</span>
             </span>
           </div>
         </div>

@@ -20,7 +20,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-heading text-2xl font-bold text-cobalt">
+        <Link href="/" className="font-heading text-2xl font-bold text-flame-orange">
           Goon
         </Link>
 
@@ -45,7 +45,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/auth/signup"
-            className="bg-cobalt text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-cobalt/90 transition-colors"
+            className="bg-flame-orange text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-flame-orange/90 transition-colors"
           >
             Get Started
           </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/auth/signup"
-            className="block bg-cobalt text-white text-sm font-semibold px-5 py-2.5 rounded-xl text-center hover:bg-cobalt/90 transition-colors"
+            className="block bg-flame-orange text-white text-sm font-semibold px-5 py-2.5 rounded-xl text-center hover:bg-flame-orange/90 transition-colors"
             onClick={() => setMobileOpen(false)}
           >
             Get Started

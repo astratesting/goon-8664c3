@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-6">
-            <Link href="/" className="font-heading text-xl font-bold text-cobalt">
+            <Link href="/" className="font-heading text-xl font-bold text-flame-orange">
               Goon
             </Link>
             <span className="text-sm text-gray-500">
