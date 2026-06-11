@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @font-face {
@@ -20,13 +21,13 @@
   --softwhite: #FAFAFA;
   --paper: #FAFAF5;
   --ink: #1F2937;
-  --ink-soft: #6B7280;
+  --ink-soft: #64748B;
   --cloud: #EEF2F6;
   --line: #E5E7EB;
-  --ink-black: #050505;
-  --indigo: #4f46e5;
+  --ink-black: #0A1628;
+  --indigo: #2563EB;
   --cyan: #06b6d4;
-  --electric-teal: #14b8a6;
+  --electric-teal: #10B981;
 }
 
 html {
@@ -34,44 +35,44 @@ html {
 }
 
 body {
-  font-family: 'Space Grotesk', 'Geist', system-ui, -apple-system, sans-serif;
-  background-color: #050505;
+  font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  background-color: #0A1628;
   color: #e5e7eb;
 }
 
 .gradient-hero {
-  background: linear-gradient(135deg, #050505 0%, #0a0a1a 30%, #050a14 60%, #050505 100%);
+  background: linear-gradient(135deg, #0A1628 0%, #0f1d35 30%, #0c1a30 60%, #0A1628 100%);
 }
 
 .gradient-sky-mint {
-  background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  background: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
 }
 
 .gradient-sand-sky {
-  background: linear-gradient(135deg, #4f46e5 0%, #14b8a6 100%);
+  background: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
 }
 
 .gradient-mint-sand {
-  background: linear-gradient(135deg, #06b6d4 0%, #14b8a6 100%);
+  background: linear-gradient(135deg, #06b6d4 0%, #10B981 100%);
 }
 
 .gradient-soft {
-  background: linear-gradient(180deg, #050505 0%, #080810 50%, #050505 100%);
+  background: linear-gradient(180deg, #0A1628 0%, #0d1a30 50%, #0A1628 100%);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  background: linear-gradient(135deg, #2563EB 0%, #10B981 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .card-glow {
-  box-shadow: 0 4px 24px -2px rgba(79, 70, 229, 0.15), 0 2px 8px -2px rgba(6, 182, 212, 0.1);
+  box-shadow: 0 4px 24px -2px rgba(37, 99, 235, 0.15), 0 2px 8px -2px rgba(16, 185, 129, 0.1);
 }
 
 .card-glow:hover {
-  box-shadow: 0 8px 32px -4px rgba(79, 70, 229, 0.25), 0 4px 16px -4px rgba(6, 182, 212, 0.15);
+  box-shadow: 0 8px 32px -4px rgba(37, 99, 235, 0.25), 0 4px 16px -4px rgba(16, 185, 129, 0.15);
 }
 
 @keyframes float {
@@ -95,8 +96,8 @@ body {
 /* Data motif grid background */
 .data-grid {
   background-image:
-    linear-gradient(rgba(79, 70, 229, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(79, 70, 229, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 

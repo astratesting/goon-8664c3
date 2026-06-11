@@ -17,14 +17,14 @@ export default function Hero() {
         </div>
 
         <h1 className="font-heading text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-6 text-white">
-          Trade signals backed by{" "}
-          <span className="text-gradient">deep learning</span>
+          AI-powered stock predictions{" "}
+          <span className="text-gradient">in plain English</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
-          Goon uses autonomous deep-learning models to analyze historical price action and
-          live social sentiment — then delivers clear, probability-backed buy and sell signals.
-          No PhD required.
+          Stop guessing. Start knowing. Goon's deep-learning engine analyzes data humans can't process
+          — alternative data, sentiment, supply chain signals — and delivers clear buy/sell signals
+          with confidence scores.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
