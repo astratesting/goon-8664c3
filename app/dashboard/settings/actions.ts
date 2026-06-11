@@ -1,7 +1,7 @@
 "use server";
 
 import { auth } from "@/lib/auth";
-import { prisma } from "@/lib/db";
+import { updateUser } from "@/lib/db";
 import { revalidatePath } from "next/cache";
 
 export async function updateProfile(formData: FormData) {
@@ -13,10 +13,7 @@ export async function updateProfile(formData: FormData) {
     throw new Error("Name must be at least 2 characters.");
   }
 
-  await prisma.user.update({
-    where: { id: session.user.id },
-    data: { name },
-  });
+  updateUser(session.user.id, { name });
 
   revalidatePath("/dashboard/settings");
 }
@@ -32,10 +29,7 @@ export async function updatePreferences(formData: FormData) {
     marketing: formData.get("marketing") === "on",
   };
 
-  await prisma.user.update({
-    where: { id: session.user.id },
-    data: { preferences: JSON.stringify(preferences) },
-  });
+  updateUser(session.user.id, { preferences: JSON.stringify(preferences) });
 
   revalidatePath("/dashboard/settings");
 }

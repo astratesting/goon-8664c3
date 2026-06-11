@@ -1,5 +1,5 @@
 import { auth } from "@/lib/auth";
-import { prisma } from "@/lib/db";
+import { getWatchlistItems, addWatchlistItem, removeWatchlistItem } from "@/lib/db";
 import { getPrediction } from "@/lib/predictions";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -7,10 +7,7 @@ export async function GET() {
   const session = await auth();
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
-  const items = await prisma.watchlistItem.findMany({
-    where: { userId: session.user.id },
-    orderBy: { addedAt: "desc" },
-  });
+  const items = getWatchlistItems(session.user.id);
 
   const enriched = items.map((item) => {
     const prediction = getPrediction(item.ticker);
@@ -33,9 +30,7 @@ export async function POST(req: NextRequest) {
   const { ticker } = await req.json();
   if (!ticker) return NextResponse.json({ error: "Ticker required" }, { status: 400 });
 
-  const item = await prisma.watchlistItem.create({
-    data: { userId: session.user.id, ticker: ticker.toUpperCase() },
-  });
+  const item = addWatchlistItem(session.user.id, ticker.toUpperCase());
 
   return NextResponse.json(item);
 }
@@ -45,7 +40,7 @@ export async function DELETE(req: NextRequest) {
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const { id } = await req.json();
-  await prisma.watchlistItem.delete({ where: { id, userId: session.user.id } });
+  removeWatchlistItem(id, session.user.id);
 
   return NextResponse.json({ ok: true });
 }

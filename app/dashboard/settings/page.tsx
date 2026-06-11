@@ -1,5 +1,5 @@
 import { auth } from "@/lib/auth";
-import { prisma } from "@/lib/db";
+import { findUserById } from "@/lib/db";
 import { updateProfile, updatePreferences } from "./actions";
 import PreferencesForm from "./PreferencesForm";
 
@@ -7,11 +7,7 @@ export default async function SettingsPage() {
   const session = await auth();
   if (!session?.user?.id) return null;
 
-  const user = await prisma.user.findUnique({
-    where: { id: session.user.id },
-    select: { id: true, name: true, email: true, preferences: true },
-  });
-
+  const user = findUserById(session.user.id);
   if (!user) return null;
 
   let preferences: {

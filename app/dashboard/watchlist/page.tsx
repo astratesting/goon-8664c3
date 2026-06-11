@@ -1,5 +1,5 @@
 import { auth } from "@/lib/auth";
-import { prisma } from "@/lib/db";
+import { getWatchlistItems } from "@/lib/db";
 import { getPrediction } from "@/lib/predictions";
 import { formatPrice, formatPercent } from "@/lib/format";
 import { SignalChip } from "@/components/SignalChip";
@@ -11,10 +11,7 @@ export default async function WatchlistPage() {
   const session = await auth();
   if (!session?.user?.id) return null;
 
-  const items = await prisma.watchlistItem.findMany({
-    where: { userId: session.user.id },
-    orderBy: { addedAt: "desc" },
-  });
+  const items = getWatchlistItems(session.user.id);
 
   const enriched = items.map((item) => {
     const prediction = getPrediction(item.ticker);

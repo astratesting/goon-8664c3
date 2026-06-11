@@ -1,5 +1,5 @@
 import { auth } from "@/lib/auth";
-import { prisma } from "@/lib/db";
+import { getWatchlistItems, getWatchlistCount } from "@/lib/db";
 import { getTopPredictions, getMarketSentiment, getAccuracy, getSignalsTodayCount } from "@/lib/predictions";
 import { getPortfolioValue, getHoldings } from "@/lib/portfolio";
 import { formatPrice, formatPercent } from "@/lib/format";
@@ -19,15 +19,9 @@ export default async function DashboardPage() {
   const holdings = getHoldings();
   const portfolioValue = getPortfolioValue(holdings);
 
-  const watchlistCount = await prisma.watchlistItem.count({
-    where: { userId: session!.user.id },
-  });
+  const watchlistCount = getWatchlistCount(session!.user.id);
 
-  const topWatchlist = await prisma.watchlistItem.findMany({
-    where: { userId: session!.user.id },
-    orderBy: { addedAt: "desc" },
-    take: 3,
-  });
+  const topWatchlist = getWatchlistItems(session!.user.id).slice(0, 3);
 
   const watchlistWithPredictions = topWatchlist.map((item) => {
     const pred = getTopPredictions(50).find(

@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/lib/db";
-import bcrypt from "bcryptjs";
+import { createUser, findUserByEmail } from "@/lib/db";
 
 export async function POST(request: Request) {
   try {
@@ -14,22 +13,16 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Password must be at least 8 characters" }, { status: 400 });
     }
 
-    const existing = await prisma.user.findUnique({ where: { email } });
+    const existing = findUserByEmail(email);
     if (existing) {
       return NextResponse.json({ error: "An account with this email already exists" }, { status: 409 });
     }
 
-    const passwordHash = await bcrypt.hash(password, 12);
-    await prisma.user.create({
-      data: {
-        name: email.split("@")[0],
-        email,
-        passwordHash,
-      },
-    });
+    await createUser(email, password);
 
     return NextResponse.json({ ok: true });
-  } catch {
-    return NextResponse.json({ error: "Invalid request" }, { status: 400 });
+  } catch (err) {
+    console.error("Signup error:", err);
+    return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
   }
 }
