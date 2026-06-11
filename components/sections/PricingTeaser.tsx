@@ -72,7 +72,7 @@ export default function PricingTeaser() {
                 ))}
               </ul>
               <div className="mt-8">
-                <a href="/register">
+                <a href="/auth/signup">
                   <Button variant={plan.highlight ? "primary" : "secondary"} className="w-full">
                     {plan.cta}
                   </Button>

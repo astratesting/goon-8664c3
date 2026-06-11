@@ -5,7 +5,7 @@ const LINKS = [
   { label: "Features", href: "#features" },
   { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
-  { label: "Sign in", href: "/login" },
+  { label: "Sign in", href: "/auth/signin" },
 ];
 
 export default function Footer() {

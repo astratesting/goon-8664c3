@@ -15,7 +15,7 @@ export default function FinalCTA() {
             new models go live.
           </p>
           <div className="mt-8">
-            <a href="/register">
+            <a href="/auth/signup">
               <Button variant="primary" className="px-8">
                 Join the waitlist
               </Button>
