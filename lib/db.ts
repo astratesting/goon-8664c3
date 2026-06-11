@@ -10,6 +10,7 @@ export interface StoredUser {
   tier: string;
   preferences: string;
   createdAt: string;
+  onboardingComplete?: boolean;
 }
 
 export interface WatchlistItem {
@@ -85,12 +86,13 @@ export async function createUser(email: string, password: string): Promise<Store
   return newUser;
 }
 
-export function updateUser(id: string, data: Partial<Pick<StoredUser, "name" | "preferences">>) {
+export function updateUser(id: string, data: Partial<Pick<StoredUser, "name" | "preferences" | "onboardingComplete">>) {
   const db = readDB();
   const user = db.users.find((u) => u.id === id);
   if (!user) return;
   if (data.name !== undefined) user.name = data.name;
   if (data.preferences !== undefined) user.preferences = data.preferences;
+  if (data.onboardingComplete !== undefined) user.onboardingComplete = data.onboardingComplete;
   writeDB(db);
 }
 

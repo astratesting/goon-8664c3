@@ -7,6 +7,7 @@ import { StatTile } from "@/components/StatTile";
 import { SignalChip } from "@/components/SignalChip";
 import { ConfidenceBar } from "@/components/ConfidenceBar";
 import Link from "next/link";
+import { DashboardSearch } from "@/components/DashboardSearch";
 
 export default async function DashboardPage() {
   const session = await auth();
@@ -55,6 +56,9 @@ export default async function DashboardPage() {
           Markets are cautiously optimistic today.
         </p>
       </div>
+
+      {/* Search bar */}
+      <DashboardSearch />
 
       {/* Stat tiles */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

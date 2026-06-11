@@ -1,5 +1,6 @@
-import { redirect } from 'next/navigation';
-import { auth } from '@/lib/auth';
+import { redirect } from "next/navigation";
+import { auth } from "@/lib/auth";
+import { findUserById } from "@/lib/db";
 
 export default async function OnboardingLayout({
   children,
@@ -7,8 +8,14 @@ export default async function OnboardingLayout({
   children: React.ReactNode;
 }) {
   const session = await auth();
-  if (!session) {
-    redirect('/auth/signin');
+  if (!session?.user?.id) {
+    redirect("/auth/signin");
+  }
+
+  // If already onboarded, skip to dashboard
+  const user = findUserById(session.user.id);
+  if (user?.onboardingComplete) {
+    redirect("/dashboard");
   }
 
   return (
