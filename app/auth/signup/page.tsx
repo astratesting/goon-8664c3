@@ -3,13 +3,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
 
 export default function SignUpPage() {
   const router = useRouter();
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirm, setConfirm] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -17,10 +16,6 @@ export default function SignUpPage() {
     e.preventDefault();
     setError("");
 
-    if (password !== confirm) {
-      setError("Passwords do not match");
-      return;
-    }
     if (password.length < 8) {
       setError("Password must be at least 8 characters");
       return;
@@ -31,7 +26,7 @@ export default function SignUpPage() {
       const res = await fetch("/api/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, password }),
+        body: JSON.stringify({ email, password }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -39,7 +34,22 @@ export default function SignUpPage() {
         setLoading(false);
         return;
       }
-      router.push("/auth/signin?registered=1");
+
+      // Auto-login after signup
+      const signInResult = await signIn("credentials", {
+        email,
+        password,
+        redirect: false,
+      });
+
+      if (signInResult?.error) {
+        // Fallback: redirect to signin if auto-login fails
+        router.push("/auth/signin?registered=1");
+        return;
+      }
+
+      router.push("/onboarding");
+      router.refresh();
     } catch {
       setError("Something went wrong. Please try again.");
       setLoading(false);
@@ -53,9 +63,9 @@ export default function SignUpPage() {
           <Link href="/" className="text-2xl font-semibold text-[#1A1A2E]">
             Goon
           </Link>
-          <h1 className="mt-4 text-xl font-semibold text-[#1F2937]">Create an account</h1>
+          <h1 className="mt-4 text-xl font-semibold text-[#1F2937]">Start Predicting</h1>
           <p className="mt-1 text-sm text-[#6B7280]">
-            Get started with AI-powered predictions
+            Create your account in seconds
           </p>
         </div>
 
@@ -67,20 +77,6 @@ export default function SignUpPage() {
           )}
 
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-[#374151] mb-1">
-              Name
-            </label>
-            <input
-              id="name"
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="w-full rounded-lg border border-[#D1D5DB] px-3 py-2.5 text-sm text-[#1F2937] focus:outline-none focus:border-[#7CB9E8] focus:ring-1 focus:ring-[#7CB9E8]"
-              placeholder="Your name"
-            />
-          </div>
-
-          <div>
             <label htmlFor="email" className="block text-sm font-medium text-[#374151] mb-1">
               Email
             </label>
@@ -90,6 +86,7 @@ export default function SignUpPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              autoFocus
               className="w-full rounded-lg border border-[#D1D5DB] px-3 py-2.5 text-sm text-[#1F2937] focus:outline-none focus:border-[#7CB9E8] focus:ring-1 focus:ring-[#7CB9E8]"
               placeholder="you@example.com"
             />
@@ -110,33 +107,18 @@ export default function SignUpPage() {
             />
           </div>
 
-          <div>
-            <label htmlFor="confirm" className="block text-sm font-medium text-[#374151] mb-1">
-              Confirm password
-            </label>
-            <input
-              id="confirm"
-              type="password"
-              value={confirm}
-              onChange={(e) => setConfirm(e.target.value)}
-              required
-              className="w-full rounded-lg border border-[#D1D5DB] px-3 py-2.5 text-sm text-[#1F2937] focus:outline-none focus:border-[#7CB9E8] focus:ring-1 focus:ring-[#7CB9E8]"
-              placeholder="Re-enter your password"
-            />
-          </div>
-
           <button
             type="submit"
             disabled={loading}
             className="w-full rounded-lg bg-[#1F2937] py-2.5 text-sm font-medium text-white hover:bg-[#374151] disabled:opacity-50 transition-colors"
           >
-            {loading ? "Creating account..." : "Create account"}
+            {loading ? "Creating account..." : "Start Predicting"}
           </button>
         </form>
 
         <p className="mt-6 text-center text-sm text-[#6B7280]">
           Already have an account?{" "}
-          <Link href="/auth/signin" className="font-medium text-[#7CB9E8] hover:text-[#5BA3D9]">
+          <Link href="/login" className="font-medium text-[#7CB9E8] hover:text-[#5BA3D9]">
             Sign in
           </Link>
         </p>
