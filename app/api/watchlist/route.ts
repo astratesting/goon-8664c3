@@ -16,10 +16,10 @@ export async function GET() {
     const prediction = getPrediction(item.ticker);
     return {
       ...item,
-      company: prediction?.company || item.ticker,
-      price: prediction?.price || 0,
+      company: prediction?.companyName || item.ticker,
+      price: prediction?.currentPrice || 0,
       direction: prediction?.direction || "neutral",
-      change: prediction ? ((prediction.target - prediction.price) / prediction.price * 100) : 0,
+      change: prediction ? ((prediction.priceTarget - prediction.currentPrice) / prediction.currentPrice * 100) : 0,
     };
   });
 

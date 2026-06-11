@@ -13,7 +13,7 @@ export async function POST(request: Request) {
 
     // In production, verify against Supabase or a database.
     // For the MVP, accept any valid email/password combo to create a working auth flow.
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const sessionData = JSON.stringify({ email, signedAt: Date.now() });
     const encoded = Buffer.from(sessionData).toString("base64");
 

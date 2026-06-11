@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import { formatDate } from "@/lib/utils/format";
-import { Badge } from "@/components/ui/badge";
+import { StatusBadge } from "@/components/ui/StatusBadge";
 
 interface HistoryEntry {
   id: string;
@@ -59,7 +59,7 @@ export function HistoryTable({ predictions }: { predictions: HistoryEntry[] }) {
                 <span className="font-semibold text-sky">{p.ticker}</span>
               </td>
               <td className="py-3 px-4">
-                <Badge variant={p.direction} />
+                <StatusBadge variant={p.direction} />
               </td>
               <td className="py-3 px-4 tabular-nums" style={{ fontVariantNumeric: "tabular-nums" }}>
                 ${p.priceTarget.toFixed(2)}

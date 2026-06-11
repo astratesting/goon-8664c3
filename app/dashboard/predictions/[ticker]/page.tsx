@@ -25,20 +25,20 @@ export default async function PredictionDetailPage({
           <h1 className="text-2xl font-bold text-[#1F2937]">{prediction.ticker}</h1>
           <SignalChip direction={prediction.direction} />
         </div>
-        <p className="text-sm text-[#6B7280] mt-1">{prediction.company}</p>
+        <p className="text-sm text-[#6B7280] mt-1">{prediction.companyName}</p>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-3">
         <Card>
           <p className="text-sm text-[#6B7280] mb-1">Current Price</p>
-          <p className="text-2xl font-semibold text-[#1F2937]">${prediction.price.toFixed(2)}</p>
+          <p className="text-2xl font-semibold text-[#1F2937]">${prediction.currentPrice.toFixed(2)}</p>
         </Card>
         <Card>
           <p className="text-sm text-[#6B7280] mb-1">Price Target</p>
-          <p className="text-2xl font-semibold text-[#1F2937]">${prediction.target.toFixed(2)}</p>
+          <p className="text-2xl font-semibold text-[#1F2937]">${prediction.priceTarget.toFixed(2)}</p>
           <p className="text-xs text-[#6B7280] mt-1">
-            {prediction.target > prediction.price ? "+" : ""}
-            {(((prediction.target - prediction.price) / prediction.price) * 100).toFixed(1)}% potential
+            {prediction.priceTarget > prediction.currentPrice ? "+" : ""}
+            {(((prediction.priceTarget - prediction.currentPrice) / prediction.currentPrice) * 100).toFixed(1)}% potential
           </p>
         </Card>
         <Card>
@@ -51,7 +51,7 @@ export default async function PredictionDetailPage({
       <Card>
         <h2 className="text-lg font-semibold text-[#1F2937] mb-3">Reasoning</h2>
         <ul className="space-y-2">
-          {prediction.reasoning.map((r: string, i: number) => (
+          {prediction.factors.map((r: string, i: number) => (
             <li key={i} className="flex items-start gap-2">
               <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#7CB9E8]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -63,7 +63,7 @@ export default async function PredictionDetailPage({
       </Card>
 
       <p className="text-xs text-[#9CA3AF] text-center">
-        Updated {new Date(prediction.updatedAt).toLocaleString()} — this is not financial advice.
+        Updated {new Date(prediction.createdAt).toLocaleString()} — this is not financial advice.
       </p>
     </div>
   );

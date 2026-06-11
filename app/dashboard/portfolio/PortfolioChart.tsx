@@ -14,7 +14,7 @@ interface PortfolioChartProps {
   data: { date: string; value: number }[];
 }
 
-export function PortfolioChart({ data }: PortfolioChartProps) {
+export default function PortfolioChart({ data }: PortfolioChartProps) {
   return (
     <ResponsiveContainer width="100%" height={280}>
       <LineChart data={data} margin={{ top: 4, right: 4, bottom: 4, left: 4 }}>

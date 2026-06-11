@@ -1,6 +1,39 @@
 import { mulberry32, generateSeries } from "./seed";
 import type { MarketIndex, Mover, Sector } from "@/types/market";
 
+const TICKER_DATA: Record<string, { name: string; basePrice: number }> = {
+  AAPL: { name: "Apple Inc.", basePrice: 189.84 },
+  MSFT: { name: "Microsoft Corp.", basePrice: 378.91 },
+  GOOGL: { name: "Alphabet Inc.", basePrice: 141.8 },
+  AMZN: { name: "Amazon.com Inc.", basePrice: 178.25 },
+  NVDA: { name: "NVIDIA Corp.", basePrice: 131.88 },
+  META: { name: "Meta Platforms Inc.", basePrice: 505.75 },
+  TSLA: { name: "Tesla Inc.", basePrice: 248.42 },
+  BRK_B: { name: "Berkshire Hathaway", basePrice: 408.52 },
+  JPM: { name: "JPMorgan Chase", basePrice: 198.47 },
+  V: { name: "Visa Inc.", basePrice: 279.32 },
+  JNJ: { name: "Johnson & Johnson", basePrice: 156.12 },
+  WMT: { name: "Walmart Inc.", basePrice: 165.23 },
+  PG: { name: "Procter & Gamble", basePrice: 162.48 },
+  MA: { name: "Mastercard Inc.", basePrice: 452.79 },
+  UNH: { name: "UnitedHealth Group", basePrice: 527.15 },
+  HD: { name: "Home Depot Inc.", basePrice: 345.28 },
+  DIS: { name: "Walt Disney Co.", basePrice: 111.93 },
+  BAC: { name: "Bank of America", basePrice: 37.42 },
+  XOM: { name: "Exxon Mobil Corp.", basePrice: 104.59 },
+  PFE: { name: "Pfizer Inc.", basePrice: 28.15 },
+  NFLX: { name: "Netflix Inc.", basePrice: 628.35 },
+  AMD: { name: "Advanced Micro Devices", basePrice: 164.22 },
+  INTC: { name: "Intel Corp.", basePrice: 43.78 },
+  CRM: { name: "Salesforce Inc.", basePrice: 272.15 },
+  ORCL: { name: "Oracle Corp.", basePrice: 125.68 },
+  ADBE: { name: "Adobe Inc.", basePrice: 498.62 },
+  PYPL: { name: "PayPal Holdings", basePrice: 63.45 },
+  CSCO: { name: "Cisco Systems", basePrice: 49.82 },
+  AVGO: { name: "Broadcom Inc.", basePrice: 168.25 },
+  QCOM: { name: "Qualcomm Inc.", basePrice: 168.92 },
+};
+
 export function getMarketData(): {
   indices: MarketIndex[];
   gainers: Mover[];

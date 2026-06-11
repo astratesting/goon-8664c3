@@ -1,92 +1,39 @@
-"use client";
+import { auth } from "@/lib/auth";
+import { prisma } from "@/lib/db";
+import { getPrediction } from "@/lib/predictions";
+import { formatPrice, formatPercent } from "@/lib/format";
+import { SignalChip } from "@/components/SignalChip";
+import { EmptyState } from "@/components/EmptyState";
+import WatchlistForm from "./WatchlistForm";
+import RemoveButton from "./RemoveButton";
 
-import { useEffect, useState } from "react";
-import SignalChip from "@/components/SignalChip";
-import ConfidenceBar from "@/components/ConfidenceBar";
-import EmptyState from "@/components/EmptyState";
-import { useSession } from "next-auth/react";
+export default async function WatchlistPage() {
+  const session = await auth();
+  if (!session?.user?.id) return null;
 
-interface WatchlistItem {
-  id: string;
-  ticker: string;
-  addedAt: string;
-}
+  const items = await prisma.watchlistItem.findMany({
+    where: { userId: session.user.id },
+    orderBy: { addedAt: "desc" },
+  });
 
-export default function WatchlistPage() {
-  const { data: session } = useSession();
-  const [items, setItems] = useState<WatchlistItem[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [ticker, setTicker] = useState("");
-  const [adding, setAdding] = useState(false);
-
-  async function loadWatchlist() {
-    try {
-      const res = await fetch("/api/watchlist");
-      const data = await res.json();
-      setItems(data.items || []);
-    } catch {
-      // ignore
-    }
-    setLoading(false);
-  }
-
-  useEffect(() => {
-    loadWatchlist();
-  }, []);
-
-  async function addTicker(e: React.FormEvent) {
-    e.preventDefault();
-    if (!ticker.trim()) return;
-    setAdding(true);
-    try {
-      await fetch("/api/watchlist", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ticker: ticker.trim().toUpperCase() }),
-      });
-      setTicker("");
-      await loadWatchlist();
-    } catch {
-      // ignore
-    }
-    setAdding(false);
-  }
-
-  async function removeTicker(id: string) {
-    await fetch(`/api/watchlist?id=${id}`, { method: "DELETE" });
-    await loadWatchlist();
-  }
-
-  if (loading) {
-    return (
-      <div className="space-y-3">
-        {[...Array(3)].map((_, i) => (
-          <div key={i} className="h-16 rounded-lg border border-[#E5E7EB] bg-white animate-pulse" />
-        ))}
-      </div>
-    );
-  }
+  const enriched = items.map((item) => {
+    const prediction = getPrediction(item.ticker);
+    return {
+      id: item.id,
+      ticker: item.ticker,
+      addedAt: item.addedAt,
+      price: prediction?.currentPrice ?? null,
+      direction: prediction?.direction ?? null,
+      target: prediction?.priceTarget ?? null,
+      confidence: prediction?.confidence ?? null,
+    };
+  });
 
   return (
-    <div className="space-y-6">
-      <form onSubmit={addTicker} className="flex gap-3">
-        <input
-          type="text"
-          value={ticker}
-          onChange={(e) => setTicker(e.target.value)}
-          placeholder="Add ticker (e.g. AAPL)"
-          className="flex-1 rounded-lg border border-[#D1D5DB] px-3 py-2.5 text-sm text-[#1F2937] placeholder-[#9CA3AF] focus:outline-none focus:border-[#7CB9E8] focus:ring-1 focus:ring-[#7CB9E8]"
-        />
-        <button
-          type="submit"
-          disabled={adding}
-          className="rounded-lg bg-[#1A1A2E] text-white px-5 py-2.5 text-sm font-medium hover:bg-[#1A1A2E]/90 transition-colors disabled:opacity-50"
-        >
-          {adding ? "Adding..." : "Add"}
-        </button>
-      </form>
+    <div className="p-6 lg:p-8 space-y-6">
+      <WatchlistForm />
 
-      {items.length === 0 ? (
+      {enriched.length === 0 ? (
         <EmptyState
           icon={
             <svg className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
@@ -95,27 +42,44 @@ export default function WatchlistPage() {
             </svg>
           }
           title="Your watchlist is empty"
-          description="Add tickers to track predictions for stocks you care about."
+          description="Add tickers above to track predictions for stocks you care about."
         />
       ) : (
         <div className="space-y-2">
-          {items.map((item) => (
+          {enriched.map((item) => (
             <div
               key={item.id}
               className="flex items-center justify-between rounded-lg border border-[#E5E7EB] bg-white p-4"
             >
-              <div className="flex items-center gap-3">
-                <span className="font-semibold text-[#1F2937]">{item.ticker}</span>
-                <span className="text-xs text-[#9CA3AF]">
-                  Added {new Date(item.addedAt).toLocaleDateString()}
+              <div className="flex items-center gap-4">
+                <span className="inline-block rounded bg-[#EEF2F6] px-2.5 py-1 font-mono font-bold text-[#1F2937] text-sm">
+                  {item.ticker}
                 </span>
+                {item.direction && <SignalChip direction={item.direction} />}
+                {item.confidence !== null && (
+                  <span className="text-xs text-[#6B7280]">
+                    {(item.confidence * 100).toFixed(0)}% conf.
+                  </span>
+                )}
               </div>
-              <button
-                onClick={() => removeTicker(item.id)}
-                className="text-sm text-[#9CA3AF] hover:text-red-500 transition-colors"
-              >
-                Remove
-              </button>
+
+              <div className="flex items-center gap-4">
+                {item.price !== null && (
+                  <span className="text-sm font-medium text-[#1F2937]">
+                    {formatPrice(item.price)}
+                  </span>
+                )}
+                {item.target !== null && item.price !== null && (
+                  <span className="text-xs text-[#98D8C8]">
+                    Target {formatPrice(item.target)} (
+                    {formatPercent(((item.target - item.price) / item.price) * 100)})
+                  </span>
+                )}
+                <span className="text-xs text-[#9CA3AF]">
+                  Added {new Date(item.addedAt).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+                </span>
+                <RemoveButton id={item.id} />
+              </div>
             </div>
           ))}
         </div>

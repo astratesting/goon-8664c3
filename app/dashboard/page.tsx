@@ -36,9 +36,9 @@ export default async function DashboardPage() {
     return {
       id: item.id,
       ticker: item.ticker,
-      price: pred?.price ?? 0,
+      price: pred?.currentPrice ?? 0,
       direction: pred?.direction ?? "neutral",
-      change: pred ? ((pred.target - pred.price) / pred.price) * 100 : 0,
+      change: pred ? ((pred.priceTarget - pred.currentPrice) / pred.currentPrice) * 100 : 0,
     };
   });
 
@@ -122,7 +122,7 @@ export default async function DashboardPage() {
                         {p.ticker}
                       </span>
                     </td>
-                    <td className="py-3 px-2 text-[#1F2937]">{p.company}</td>
+                    <td className="py-3 px-2 text-[#1F2937]">{p.companyName}</td>
                     <td className="py-3 px-2">
                       <SignalChip direction={p.direction} />
                     </td>
@@ -130,7 +130,7 @@ export default async function DashboardPage() {
                       <ConfidenceBar confidence={p.confidence} />
                     </td>
                     <td className="py-3 px-2 text-right font-medium text-[#1F2937]">
-                      {formatPrice(p.target)}
+                      {formatPrice(p.priceTarget)}
                     </td>
                   </tr>
                 ))}

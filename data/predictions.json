@@ -1,0 +1,2853 @@
+[
+  {
+    "ticker": "AAPL",
+    "company": "Apple Inc.",
+    "price": 192.3,
+    "direction": "bullish",
+    "confidence": 0.95,
+    "target": 209.46,
+    "timeframe": "7d",
+    "reasoning": [
+      "Institutional inflows have increased 12% over the past week for AAPL.",
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for AAPL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "MSFT",
+    "company": "Microsoft Corp.",
+    "price": 425.5,
+    "direction": "bullish",
+    "confidence": 0.6,
+    "target": 457.42,
+    "timeframe": "14d",
+    "reasoning": [
+      "Money flow index indicates sustained accumulation in MSFT.",
+      "Earnings revision estimates trending higher ahead of next quarter for Microsoft Corp.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "GOOGL",
+    "company": "Alphabet Inc.",
+    "price": 175.2,
+    "direction": "bearish",
+    "confidence": 0.65,
+    "target": 164.22,
+    "timeframe": "3d",
+    "reasoning": [
+      "Short interest increasing 10% suggesting growing bearish sentiment on GOOGL.",
+      "Breaking below the 200-day moving average with heavy volume for GOOGL.",
+      "Money flow index indicates sustained distribution in GOOGL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "AMZN",
+    "company": "Amazon.com Inc.",
+    "price": 186.4,
+    "direction": "bearish",
+    "confidence": 0.46,
+    "target": 158.95,
+    "timeframe": "3d",
+    "reasoning": [
+      "Negative sentiment shift detected across analyst reports for AMZN.",
+      "Momentum indicators on AMZN are trending down over the last 14 sessions."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA Corp.",
+    "price": 135.7,
+    "direction": "bearish",
+    "confidence": 0.8,
+    "target": 116.38,
+    "timeframe": "3d",
+    "reasoning": [
+      "Weakening demand signals from recent channel checks for NVIDIA Corp..",
+      "Analyst downgrades outnumber upgrades 2-to-1 in the last month for NVIDIA Corp.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms Inc.",
+    "price": 498.6,
+    "direction": "bearish",
+    "confidence": 0.71,
+    "target": 441.86,
+    "timeframe": "7d",
+    "reasoning": [
+      "Earnings revision estimates trending lower ahead of next quarter for Meta Platforms Inc..",
+      "Institutional outflows have increased 15% over the past week for META.",
+      "Head and shoulders pattern forming on the daily chart for META."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "TSLA",
+    "company": "Tesla Inc.",
+    "price": 245.8,
+    "direction": "bullish",
+    "confidence": 0.84,
+    "target": 276.52,
+    "timeframe": "30d",
+    "reasoning": [
+      "RSI showing bullish divergence on the daily chart for TSLA.",
+      "Money flow index indicates sustained accumulation in TSLA."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "BRK.B",
+    "company": "Berkshire Hathaway",
+    "price": 420.15,
+    "direction": "bearish",
+    "confidence": 0.63,
+    "target": 379.58,
+    "timeframe": "30d",
+    "reasoning": [
+      "RSI showing bearish divergence on the daily chart for BRK.B.",
+      "Weakening demand signals from recent channel checks for Berkshire Hathaway."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "JPM",
+    "company": "JPMorgan Chase & Co.",
+    "price": 198.5,
+    "direction": "bearish",
+    "confidence": 0.81,
+    "target": 189.38,
+    "timeframe": "7d",
+    "reasoning": [
+      "Negative sentiment shift detected across analyst reports for JPM.",
+      "Earnings revision estimates trending lower ahead of next quarter for JPMorgan Chase & Co.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "V",
+    "company": "Visa Inc.",
+    "price": 282.3,
+    "direction": "bullish",
+    "confidence": 0.72,
+    "target": 293.09,
+    "timeframe": "7d",
+    "reasoning": [
+      "Strong support level holding at current price with low downside risk for V.",
+      "Short interest declining 8% suggesting improving sentiment on V."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "UNH",
+    "company": "UnitedHealth Group",
+    "price": 520.4,
+    "direction": "bearish",
+    "confidence": 0.84,
+    "target": 497.0,
+    "timeframe": "3d",
+    "reasoning": [
+      "Weakening demand signals from recent channel checks for UnitedHealth Group.",
+      "Momentum indicators on UNH are trending down over the last 14 sessions."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "JNJ",
+    "company": "Johnson & Johnson",
+    "price": 155.2,
+    "direction": "bullish",
+    "confidence": 0.93,
+    "target": 161.66,
+    "timeframe": "3d",
+    "reasoning": [
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for JNJ.",
+      "Earnings revision estimates trending higher ahead of next quarter for Johnson & Johnson.",
+      "MACD histogram turning positive with increasing momentum for JNJ."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "WMT",
+    "company": "Walmart Inc.",
+    "price": 92.1,
+    "direction": "bullish",
+    "confidence": 0.45,
+    "target": 98.62,
+    "timeframe": "7d",
+    "reasoning": [
+      "Sector rotation favoring Consumer stocks with WMT as a top beneficiary.",
+      "Relative strength versus S&P 500 at multi-week highs for WMT.",
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for WMT."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "PG",
+    "company": "Procter & Gamble",
+    "price": 168.4,
+    "direction": "bearish",
+    "confidence": 0.49,
+    "target": 144.42,
+    "timeframe": "3d",
+    "reasoning": [
+      "Analyst downgrades outnumber upgrades 2-to-1 in the last month for Procter & Gamble.",
+      "Weakening demand signals from recent channel checks for Procter & Gamble."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "MA",
+    "company": "Mastercard Inc.",
+    "price": 462.7,
+    "direction": "bearish",
+    "confidence": 0.74,
+    "target": 423.54,
+    "timeframe": "3d",
+    "reasoning": [
+      "Weakening demand signals from recent channel checks for Mastercard Inc..",
+      "Breaking below the 200-day moving average with heavy volume for MA."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "HD",
+    "company": "Home Depot Inc.",
+    "price": 378.9,
+    "direction": "bullish",
+    "confidence": 0.84,
+    "target": 389.83,
+    "timeframe": "7d",
+    "reasoning": [
+      "MACD histogram turning positive with increasing momentum for HD.",
+      "RSI showing bullish divergence on the daily chart for HD."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "DIS",
+    "company": "Walt Disney Co.",
+    "price": 112.5,
+    "direction": "neutral",
+    "confidence": 0.74,
+    "target": 109.39,
+    "timeframe": "14d",
+    "reasoning": [
+      "RSI hovering near the midpoint with no clear momentum for DIS.",
+      "Volume declining at current levels suggesting indecision in DIS."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Communications"
+  },
+  {
+    "ticker": "BAC",
+    "company": "Bank of America",
+    "price": 40.85,
+    "direction": "bullish",
+    "confidence": 0.85,
+    "target": 45.47,
+    "timeframe": "7d",
+    "reasoning": [
+      "Strong support level holding at current price with low downside risk for BAC.",
+      "MACD histogram turning positive with increasing momentum for BAC."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "XOM",
+    "company": "Exxon Mobil Corp.",
+    "price": 108.6,
+    "direction": "neutral",
+    "confidence": 0.79,
+    "target": 107.3,
+    "timeframe": "3d",
+    "reasoning": [
+      "Trading range bound between key support and resistance levels for XOM.",
+      "Consolidation pattern forming with low volatility in XOM.",
+      "Balanced institutional flows with no clear directional bias for XOM."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "NFLX",
+    "company": "Netflix Inc.",
+    "price": 685.3,
+    "direction": "neutral",
+    "confidence": 0.49,
+    "target": 675.65,
+    "timeframe": "14d",
+    "reasoning": [
+      "Trading range bound between key support and resistance levels for NFLX.",
+      "Sector-neutral positioning recommended until clearer signals emerge for NFLX.",
+      "Mixed signals from technical indicators suggest a wait-and-see approach on NFLX."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Communications"
+  },
+  {
+    "ticker": "ADBE",
+    "company": "Adobe Inc.",
+    "price": 478.2,
+    "direction": "neutral",
+    "confidence": 0.59,
+    "target": 484.04,
+    "timeframe": "3d",
+    "reasoning": [
+      "Awaiting upcoming catalyst event before committing to a direction on ADBE.",
+      "Volume declining at current levels suggesting indecision in ADBE."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "CRM",
+    "company": "Salesforce Inc.",
+    "price": 272.4,
+    "direction": "bullish",
+    "confidence": 0.85,
+    "target": 281.94,
+    "timeframe": "14d",
+    "reasoning": [
+      "Money flow index indicates sustained accumulation in CRM.",
+      "Institutional inflows have increased 12% over the past week for CRM."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "AMD",
+    "company": "Advanced Micro Devices",
+    "price": 162.8,
+    "direction": "bullish",
+    "confidence": 0.49,
+    "target": 173.31,
+    "timeframe": "3d",
+    "reasoning": [
+      "Fibonacci retracement support holding at the 61.8% level for AMD.",
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for AMD.",
+      "Strong support level holding at current price with low downside risk for AMD."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "INTC",
+    "company": "Intel Corp.",
+    "price": 22.5,
+    "direction": "bullish",
+    "confidence": 0.52,
+    "target": 23.76,
+    "timeframe": "14d",
+    "reasoning": [
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for Intel Corp..",
+      "Institutional inflows have increased 12% over the past week for INTC."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "PYPL",
+    "company": "PayPal Holdings",
+    "price": 72.3,
+    "direction": "neutral",
+    "confidence": 0.53,
+    "target": 73.19,
+    "timeframe": "7d",
+    "reasoning": [
+      "Trading range bound between key support and resistance levels for PYPL.",
+      "Consolidation pattern forming with low volatility in PYPL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "COST",
+    "company": "Costco Wholesale",
+    "price": 872.5,
+    "direction": "bullish",
+    "confidence": 0.72,
+    "target": 984.61,
+    "timeframe": "3d",
+    "reasoning": [
+      "Relative strength versus S&P 500 at multi-week highs for COST.",
+      "Institutional inflows have increased 12% over the past week for COST."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "PEP",
+    "company": "PepsiCo Inc.",
+    "price": 178.4,
+    "direction": "bullish",
+    "confidence": 0.6,
+    "target": 202.82,
+    "timeframe": "7d",
+    "reasoning": [
+      "On-balance volume trending higher confirming price advance for PEP.",
+      "Earnings revision estimates trending higher ahead of next quarter for PepsiCo Inc.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "KO",
+    "company": "Coca-Cola Co.",
+    "price": 62.15,
+    "direction": "bullish",
+    "confidence": 0.78,
+    "target": 66.25,
+    "timeframe": "7d",
+    "reasoning": [
+      "Institutional inflows have increased 12% over the past week for KO.",
+      "Positive sentiment shift detected across social media mentions for KO.",
+      "Moving average crossover signals continued upward momentum for KO."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "NKE",
+    "company": "Nike Inc.",
+    "price": 78.3,
+    "direction": "neutral",
+    "confidence": 0.83,
+    "target": 79.41,
+    "timeframe": "7d",
+    "reasoning": [
+      "RSI hovering near the midpoint with no clear momentum for NKE.",
+      "Sector-neutral positioning recommended until clearer signals emerge for NKE.",
+      "Volume declining at current levels suggesting indecision in NKE."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "MRK",
+    "company": "Merck & Co.",
+    "price": 128.7,
+    "direction": "bullish",
+    "confidence": 0.58,
+    "target": 133.08,
+    "timeframe": "7d",
+    "reasoning": [
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for MRK.",
+      "Positive sentiment shift detected across social media mentions for MRK."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "PFE",
+    "company": "Pfizer Inc.",
+    "price": 28.4,
+    "direction": "bearish",
+    "confidence": 0.89,
+    "target": 25.27,
+    "timeframe": "7d",
+    "reasoning": [
+      "Negative sentiment shift detected across analyst reports for PFE.",
+      "Momentum indicators on PFE are trending down over the last 14 sessions."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "ABBV",
+    "company": "AbbVie Inc.",
+    "price": 178.9,
+    "direction": "bullish",
+    "confidence": 0.65,
+    "target": 188.96,
+    "timeframe": "30d",
+    "reasoning": [
+      "Strong support level holding at current price with low downside risk for ABBV.",
+      "On-balance volume trending higher confirming price advance for ABBV."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "LLY",
+    "company": "Eli Lilly & Co.",
+    "price": 820.5,
+    "direction": "bullish",
+    "confidence": 0.79,
+    "target": 926.9,
+    "timeframe": "7d",
+    "reasoning": [
+      "Momentum indicators on LLY are trending up over the last 14 sessions.",
+      "RSI showing bullish divergence on the daily chart for LLY.",
+      "Strong support level holding at current price with low downside risk for LLY."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "ORCL",
+    "company": "Oracle Corp.",
+    "price": 172.6,
+    "direction": "bullish",
+    "confidence": 0.74,
+    "target": 198.12,
+    "timeframe": "14d",
+    "reasoning": [
+      "RSI showing bullish divergence on the daily chart for ORCL.",
+      "Relative strength versus S&P 500 at multi-week highs for ORCL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "CSCO",
+    "company": "Cisco Systems",
+    "price": 58.3,
+    "direction": "bearish",
+    "confidence": 0.81,
+    "target": 51.93,
+    "timeframe": "14d",
+    "reasoning": [
+      "MACD histogram turning negative with increasing selling momentum for CSCO.",
+      "Earnings revision estimates trending lower ahead of next quarter for Cisco Systems."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "T",
+    "company": "AT&T Inc.",
+    "price": 22.45,
+    "direction": "bullish",
+    "confidence": 0.52,
+    "target": 24.42,
+    "timeframe": "3d",
+    "reasoning": [
+      "On-balance volume trending higher confirming price advance for T.",
+      "Relative strength versus S&P 500 at multi-week highs for T."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Communications"
+  },
+  {
+    "ticker": "VZ",
+    "company": "Verizon Communications",
+    "price": 42.1,
+    "direction": "bearish",
+    "confidence": 0.94,
+    "target": 39.2,
+    "timeframe": "14d",
+    "reasoning": [
+      "Sector headwinds impacting Communications stocks with VZ facing elevated risk.",
+      "Breaking below the 200-day moving average with heavy volume for VZ."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Communications"
+  },
+  {
+    "ticker": "BA",
+    "company": "Boeing Co.",
+    "price": 185.6,
+    "direction": "bearish",
+    "confidence": 0.78,
+    "target": 165.63,
+    "timeframe": "30d",
+    "reasoning": [
+      "Money flow index indicates sustained distribution in BA.",
+      "Institutional outflows have increased 15% over the past week for BA.",
+      "Earnings revision estimates trending lower ahead of next quarter for Boeing Co.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "GS",
+    "company": "Goldman Sachs",
+    "price": 468.2,
+    "direction": "bearish",
+    "confidence": 0.78,
+    "target": 421.05,
+    "timeframe": "3d",
+    "reasoning": [
+      "Sector headwinds impacting Finance stocks with GS facing elevated risk.",
+      "MACD histogram turning negative with increasing selling momentum for GS."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "SPY",
+    "company": "SPDR S&P 500 ETF",
+    "price": 542.3,
+    "direction": "bullish",
+    "confidence": 0.6,
+    "target": 567.96,
+    "timeframe": "7d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on SPY.",
+      "Money flow index indicates sustained accumulation in SPY.",
+      "Fibonacci retracement support holding at the 61.8% level for SPY."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "QQQ",
+    "company": "Invesco QQQ Trust",
+    "price": 478.9,
+    "direction": "bullish",
+    "confidence": 0.71,
+    "target": 537.89,
+    "timeframe": "14d",
+    "reasoning": [
+      "Volume breakout detected with above-average buying pressure on QQQ.",
+      "Sector rotation favoring Finance stocks with QQQ as a top beneficiary."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "UBER",
+    "company": "Uber Technologies",
+    "price": 78.4,
+    "direction": "bearish",
+    "confidence": 0.61,
+    "target": 69.03,
+    "timeframe": "3d",
+    "reasoning": [
+      "Negative sentiment shift detected across analyst reports for UBER.",
+      "Earnings revision estimates trending lower ahead of next quarter for Uber Technologies.",
+      "Institutional outflows have increased 15% over the past week for UBER."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "SHOP",
+    "company": "Shopify Inc.",
+    "price": 72.5,
+    "direction": "bullish",
+    "confidence": 0.62,
+    "target": 79.71,
+    "timeframe": "7d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on SHOP.",
+      "Relative strength versus S&P 500 at multi-week highs for SHOP."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "SQ",
+    "company": "Block Inc.",
+    "price": 68.3,
+    "direction": "bearish",
+    "confidence": 0.81,
+    "target": 61.46,
+    "timeframe": "3d",
+    "reasoning": [
+      "Negative sentiment shift detected across analyst reports for SQ.",
+      "Institutional outflows have increased 15% over the past week for SQ.",
+      "Momentum indicators on SQ are trending down over the last 14 sessions."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "PLTR",
+    "company": "Palantir Technologies",
+    "price": 24.8,
+    "direction": "bullish",
+    "confidence": 0.84,
+    "target": 26.0,
+    "timeframe": "30d",
+    "reasoning": [
+      "Recent supply chain analysis suggests strong Q2 demand for Palantir Technologies.",
+      "Positive sentiment shift detected across social media mentions for PLTR.",
+      "RSI showing bullish divergence on the daily chart for PLTR."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "SOFI",
+    "company": "SoFi Technologies",
+    "price": 10.25,
+    "direction": "bullish",
+    "confidence": 0.53,
+    "target": 11.16,
+    "timeframe": "30d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on SOFI.",
+      "Fibonacci retracement support holding at the 61.8% level for SOFI.",
+      "Relative strength versus S&P 500 at multi-week highs for SOFI."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "COIN",
+    "company": "Coinbase Global",
+    "price": 228.4,
+    "direction": "bullish",
+    "confidence": 0.92,
+    "target": 247.06,
+    "timeframe": "7d",
+    "reasoning": [
+      "Positive sentiment shift detected across social media mentions for COIN.",
+      "Strong support level holding at current price with low downside risk for COIN.",
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for COIN."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "RIVN",
+    "company": "Rivian Automotive",
+    "price": 14.6,
+    "direction": "bearish",
+    "confidence": 0.46,
+    "target": 12.95,
+    "timeframe": "7d",
+    "reasoning": [
+      "Analyst downgrades outnumber upgrades 2-to-1 in the last month for Rivian Automotive.",
+      "Money flow index indicates sustained distribution in RIVN.",
+      "Distribution pattern detected with above-average selling pressure on RIVN."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "LCID",
+    "company": "Lucid Group",
+    "price": 3.85,
+    "direction": "bearish",
+    "confidence": 0.52,
+    "target": 3.35,
+    "timeframe": "30d",
+    "reasoning": [
+      "Distribution pattern detected with above-average selling pressure on LCID.",
+      "Relative strength versus S&P 500 at multi-week lows for LCID."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "MU",
+    "company": "Micron Technology",
+    "price": 128.5,
+    "direction": "bearish",
+    "confidence": 0.62,
+    "target": 117.01,
+    "timeframe": "30d",
+    "reasoning": [
+      "Earnings revision estimates trending lower ahead of next quarter for Micron Technology.",
+      "Relative strength versus S&P 500 at multi-week lows for MU."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "DELL",
+    "company": "Dell Technologies",
+    "price": 132.4,
+    "direction": "bearish",
+    "confidence": 0.9,
+    "target": 124.51,
+    "timeframe": "14d",
+    "reasoning": [
+      "Head and shoulders pattern forming on the daily chart for DELL.",
+      "Momentum indicators on DELL are trending down over the last 14 sessions.",
+      "On-balance volume trending lower confirming price decline for DELL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "GE",
+    "company": "GE Aerospace",
+    "price": 168.2,
+    "direction": "bullish",
+    "confidence": 0.83,
+    "target": 190.23,
+    "timeframe": "7d",
+    "reasoning": [
+      "Money flow index indicates sustained accumulation in GE.",
+      "Positive sentiment shift detected across social media mentions for GE.",
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for GE."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "F",
+    "company": "Ford Motor Co.",
+    "price": 12.35,
+    "direction": "bullish",
+    "confidence": 0.53,
+    "target": 13.22,
+    "timeframe": "3d",
+    "reasoning": [
+      "Moving average crossover signals continued upward momentum for F.",
+      "Short interest declining 8% suggesting improving sentiment on F.",
+      "Institutional inflows have increased 12% over the past week for F."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "GM",
+    "company": "General Motors",
+    "price": 48.6,
+    "direction": "bullish",
+    "confidence": 0.9,
+    "target": 53.76,
+    "timeframe": "30d",
+    "reasoning": [
+      "Relative strength versus S&P 500 at multi-week highs for GM.",
+      "Institutional inflows have increased 12% over the past week for GM."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "NCLH",
+    "company": "Norwegian Cruise Line",
+    "price": 22.1,
+    "direction": "bullish",
+    "confidence": 0.49,
+    "target": 23.48,
+    "timeframe": "14d",
+    "reasoning": [
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for Norwegian Cruise Line.",
+      "Money flow index indicates sustained accumulation in NCLH.",
+      "MACD histogram turning positive with increasing momentum for NCLH."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "CCL",
+    "company": "Carnival Corp.",
+    "price": 24.8,
+    "direction": "bearish",
+    "confidence": 0.83,
+    "target": 23.76,
+    "timeframe": "3d",
+    "reasoning": [
+      "Distribution pattern detected with above-average selling pressure on CCL.",
+      "Head and shoulders pattern forming on the daily chart for CCL.",
+      "Momentum indicators on CCL are trending down over the last 14 sessions."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "DAL",
+    "company": "Delta Air Lines",
+    "price": 52.3,
+    "direction": "bullish",
+    "confidence": 0.87,
+    "target": 57.77,
+    "timeframe": "7d",
+    "reasoning": [
+      "Momentum indicators on DAL are trending up over the last 14 sessions.",
+      "Positive sentiment shift detected across social media mentions for DAL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "UAL",
+    "company": "United Airlines",
+    "price": 58.7,
+    "direction": "bearish",
+    "confidence": 0.9,
+    "target": 51.72,
+    "timeframe": "14d",
+    "reasoning": [
+      "RSI showing bearish divergence on the daily chart for UAL.",
+      "Earnings revision estimates trending lower ahead of next quarter for United Airlines.",
+      "Short interest increasing 10% suggesting growing bearish sentiment on UAL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "LUV",
+    "company": "Southwest Airlines",
+    "price": 30.4,
+    "direction": "bullish",
+    "confidence": 0.83,
+    "target": 31.67,
+    "timeframe": "3d",
+    "reasoning": [
+      "Moving average crossover signals continued upward momentum for LUV.",
+      "Sector rotation favoring Industrial stocks with LUV as a top beneficiary."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "AAL",
+    "company": "American Airlines",
+    "price": 12.8,
+    "direction": "bearish",
+    "confidence": 0.74,
+    "target": 12.43,
+    "timeframe": "7d",
+    "reasoning": [
+      "MACD histogram turning negative with increasing selling momentum for AAL.",
+      "Earnings revision estimates trending lower ahead of next quarter for American Airlines.",
+      "Distribution pattern detected with above-average selling pressure on AAL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "PINS",
+    "company": "Pinterest Inc.",
+    "price": 34.2,
+    "direction": "bullish",
+    "confidence": 0.58,
+    "target": 38.66,
+    "timeframe": "30d",
+    "reasoning": [
+      "Recent supply chain analysis suggests strong Q2 demand for Pinterest Inc..",
+      "On-balance volume trending higher confirming price advance for PINS."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Communications"
+  },
+  {
+    "ticker": "SNAP",
+    "company": "Snap Inc.",
+    "price": 14.5,
+    "direction": "bearish",
+    "confidence": 0.78,
+    "target": 12.45,
+    "timeframe": "3d",
+    "reasoning": [
+      "Momentum indicators on SNAP are trending down over the last 14 sessions.",
+      "Relative strength versus S&P 500 at multi-week lows for SNAP.",
+      "Head and shoulders pattern forming on the daily chart for SNAP."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Communications"
+  },
+  {
+    "ticker": "ROKU",
+    "company": "Roku Inc.",
+    "price": 82.6,
+    "direction": "bullish",
+    "confidence": 0.67,
+    "target": 88.14,
+    "timeframe": "14d",
+    "reasoning": [
+      "Institutional inflows have increased 12% over the past week for ROKU.",
+      "Relative strength versus S&P 500 at multi-week highs for ROKU.",
+      "Moving average crossover signals continued upward momentum for ROKU."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Communications"
+  },
+  {
+    "ticker": "ZM",
+    "company": "Zoom Video",
+    "price": 72.4,
+    "direction": "bearish",
+    "confidence": 0.76,
+    "target": 70.2,
+    "timeframe": "14d",
+    "reasoning": [
+      "Short interest increasing 10% suggesting growing bearish sentiment on ZM.",
+      "Relative strength versus S&P 500 at multi-week lows for ZM.",
+      "Key resistance level rejecting price advances for ZM."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "SPOT",
+    "company": "Spotify Technology",
+    "price": 328.5,
+    "direction": "bullish",
+    "confidence": 0.93,
+    "target": 338.77,
+    "timeframe": "14d",
+    "reasoning": [
+      "Positive sentiment shift detected across social media mentions for SPOT.",
+      "Short interest declining 8% suggesting improving sentiment on SPOT.",
+      "MACD histogram turning positive with increasing momentum for SPOT."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Communications"
+  },
+  {
+    "ticker": "TWLO",
+    "company": "Twilio Inc.",
+    "price": 68.3,
+    "direction": "bearish",
+    "confidence": 0.59,
+    "target": 59.67,
+    "timeframe": "14d",
+    "reasoning": [
+      "On-balance volume trending lower confirming price decline for TWLO.",
+      "Key resistance level rejecting price advances for TWLO."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "ABNB",
+    "company": "Airbnb Inc.",
+    "price": 148.7,
+    "direction": "bearish",
+    "confidence": 0.55,
+    "target": 143.41,
+    "timeframe": "3d",
+    "reasoning": [
+      "Breaking below the 200-day moving average with heavy volume for ABNB.",
+      "Earnings revision estimates trending lower ahead of next quarter for Airbnb Inc.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "DASH",
+    "company": "DoorDash Inc.",
+    "price": 118.4,
+    "direction": "bullish",
+    "confidence": 0.52,
+    "target": 129.31,
+    "timeframe": "30d",
+    "reasoning": [
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for DASH.",
+      "Money flow index indicates sustained accumulation in DASH."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "U",
+    "company": "Unity Software",
+    "price": 22.6,
+    "direction": "bullish",
+    "confidence": 0.85,
+    "target": 23.33,
+    "timeframe": "14d",
+    "reasoning": [
+      "MACD histogram turning positive with increasing momentum for U.",
+      "Positive sentiment shift detected across social media mentions for U."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "RBLX",
+    "company": "Roblox Corp.",
+    "price": 48.3,
+    "direction": "bullish",
+    "confidence": 0.78,
+    "target": 51.58,
+    "timeframe": "30d",
+    "reasoning": [
+      "Relative strength versus S&P 500 at multi-week highs for RBLX.",
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for Roblox Corp..",
+      "On-balance volume trending higher confirming price advance for RBLX."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "DKNG",
+    "company": "DraftKings Inc.",
+    "price": 38.5,
+    "direction": "bearish",
+    "confidence": 0.49,
+    "target": 33.33,
+    "timeframe": "7d",
+    "reasoning": [
+      "Analyst downgrades outnumber upgrades 2-to-1 in the last month for DraftKings Inc..",
+      "RSI showing bearish divergence on the daily chart for DKNG."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "PENN",
+    "company": "Penn Entertainment",
+    "price": 18.7,
+    "direction": "bullish",
+    "confidence": 0.58,
+    "target": 19.75,
+    "timeframe": "7d",
+    "reasoning": [
+      "RSI showing bullish divergence on the daily chart for PENN.",
+      "Earnings revision estimates trending higher ahead of next quarter for Penn Entertainment.",
+      "Sector rotation favoring Consumer stocks with PENN as a top beneficiary."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "W",
+    "company": "Wayfair Inc.",
+    "price": 58.4,
+    "direction": "bearish",
+    "confidence": 0.63,
+    "target": 51.93,
+    "timeframe": "3d",
+    "reasoning": [
+      "Key resistance level rejecting price advances for W.",
+      "Weakening demand signals from recent channel checks for Wayfair Inc.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "CHWY",
+    "company": "Chewy Inc.",
+    "price": 28.3,
+    "direction": "bullish",
+    "confidence": 0.73,
+    "target": 31.43,
+    "timeframe": "3d",
+    "reasoning": [
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for CHWY.",
+      "RSI showing bullish divergence on the daily chart for CHWY."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "LMND",
+    "company": "Lemonade Inc.",
+    "price": 28.4,
+    "direction": "bullish",
+    "confidence": 0.74,
+    "target": 30.7,
+    "timeframe": "14d",
+    "reasoning": [
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for Lemonade Inc..",
+      "Moving average crossover signals continued upward momentum for LMND.",
+      "Recent supply chain analysis suggests strong Q2 demand for Lemonade Inc.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "MARA",
+    "company": "Marathon Digital",
+    "price": 22.5,
+    "direction": "bearish",
+    "confidence": 0.89,
+    "target": 21.53,
+    "timeframe": "7d",
+    "reasoning": [
+      "Head and shoulders pattern forming on the daily chart for MARA.",
+      "Distribution pattern detected with above-average selling pressure on MARA.",
+      "Weakening demand signals from recent channel checks for Marathon Digital."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "RIOT",
+    "company": "Riot Platforms",
+    "price": 12.3,
+    "direction": "bearish",
+    "confidence": 0.55,
+    "target": 10.94,
+    "timeframe": "7d",
+    "reasoning": [
+      "RSI showing bearish divergence on the daily chart for RIOT.",
+      "Relative strength versus S&P 500 at multi-week lows for RIOT."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "HOOD",
+    "company": "Robinhood Markets",
+    "price": 22.8,
+    "direction": "bullish",
+    "confidence": 0.84,
+    "target": 24.38,
+    "timeframe": "3d",
+    "reasoning": [
+      "Sector rotation favoring Finance stocks with HOOD as a top beneficiary.",
+      "Relative strength versus S&P 500 at multi-week highs for HOOD.",
+      "Money flow index indicates sustained accumulation in HOOD."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "AFRM",
+    "company": "Affirm Holdings",
+    "price": 38.6,
+    "direction": "bullish",
+    "confidence": 0.75,
+    "target": 43.09,
+    "timeframe": "3d",
+    "reasoning": [
+      "Earnings revision estimates trending higher ahead of next quarter for Affirm Holdings.",
+      "Strong support level holding at current price with low downside risk for AFRM."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "UPST",
+    "company": "Upstart Holdings",
+    "price": 32.4,
+    "direction": "bearish",
+    "confidence": 0.48,
+    "target": 27.86,
+    "timeframe": "30d",
+    "reasoning": [
+      "Relative strength versus S&P 500 at multi-week lows for UPST.",
+      "Short interest increasing 10% suggesting growing bearish sentiment on UPST."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "BILL",
+    "company": "Bill Holdings",
+    "price": 68.5,
+    "direction": "bullish",
+    "confidence": 0.6,
+    "target": 71.93,
+    "timeframe": "14d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on BILL.",
+      "Volume breakout detected with above-average buying pressure on BILL.",
+      "Positive sentiment shift detected across social media mentions for BILL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Finance"
+  },
+  {
+    "ticker": "TTD",
+    "company": "The Trade Desk",
+    "price": 98.4,
+    "direction": "bullish",
+    "confidence": 0.84,
+    "target": 108.36,
+    "timeframe": "7d",
+    "reasoning": [
+      "Relative strength versus S&P 500 at multi-week highs for TTD.",
+      "RSI showing bullish divergence on the daily chart for TTD."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "PANW",
+    "company": "Palo Alto Networks",
+    "price": 328.6,
+    "direction": "neutral",
+    "confidence": 0.77,
+    "target": 336.65,
+    "timeframe": "7d",
+    "reasoning": [
+      "Trading range bound between key support and resistance levels for PANW.",
+      "Consolidation pattern forming with low volatility in PANW."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings",
+    "price": 358.2,
+    "direction": "bullish",
+    "confidence": 0.85,
+    "target": 393.07,
+    "timeframe": "14d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on CRWD.",
+      "RSI showing bullish divergence on the daily chart for CRWD.",
+      "Money flow index indicates sustained accumulation in CRWD."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "NET",
+    "company": "Cloudflare Inc.",
+    "price": 92.4,
+    "direction": "bullish",
+    "confidence": 0.8,
+    "target": 105.57,
+    "timeframe": "30d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on NET.",
+      "Volume breakout detected with above-average buying pressure on NET.",
+      "Recent supply chain analysis suggests strong Q2 demand for Cloudflare Inc.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "DDOG",
+    "company": "Datadog Inc.",
+    "price": 138.5,
+    "direction": "bearish",
+    "confidence": 0.82,
+    "target": 128.59,
+    "timeframe": "3d",
+    "reasoning": [
+      "Distribution pattern detected with above-average selling pressure on DDOG.",
+      "Negative sentiment shift detected across analyst reports for DDOG."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "SNOW",
+    "company": "Snowflake Inc.",
+    "price": 168.3,
+    "direction": "bullish",
+    "confidence": 0.91,
+    "target": 177.56,
+    "timeframe": "30d",
+    "reasoning": [
+      "Moving average crossover signals continued upward momentum for SNOW.",
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for SNOW."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "MDB",
+    "company": "MongoDB Inc.",
+    "price": 282.4,
+    "direction": "bearish",
+    "confidence": 0.85,
+    "target": 261.53,
+    "timeframe": "30d",
+    "reasoning": [
+      "Distribution pattern detected with above-average selling pressure on MDB.",
+      "Head and shoulders pattern forming on the daily chart for MDB.",
+      "On-balance volume trending lower confirming price decline for MDB."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "ZS",
+    "company": "Zscaler Inc.",
+    "price": 218.6,
+    "direction": "neutral",
+    "confidence": 0.62,
+    "target": 220.83,
+    "timeframe": "30d",
+    "reasoning": [
+      "Volume declining at current levels suggesting indecision in ZS.",
+      "Balanced institutional flows with no clear directional bias for ZS."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "OKTA",
+    "company": "Okta Inc.",
+    "price": 108.3,
+    "direction": "bullish",
+    "confidence": 0.61,
+    "target": 121.92,
+    "timeframe": "14d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on OKTA.",
+      "Volume breakout detected with above-average buying pressure on OKTA."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "TEAM",
+    "company": "Atlassian Corp.",
+    "price": 198.5,
+    "direction": "bearish",
+    "confidence": 0.47,
+    "target": 188.66,
+    "timeframe": "30d",
+    "reasoning": [
+      "Money flow index indicates sustained distribution in TEAM.",
+      "Short interest increasing 10% suggesting growing bearish sentiment on TEAM."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "WDAY",
+    "company": "Workday Inc.",
+    "price": 248.7,
+    "direction": "neutral",
+    "confidence": 0.54,
+    "target": 250.53,
+    "timeframe": "7d",
+    "reasoning": [
+      "Sector-neutral positioning recommended until clearer signals emerge for WDAY.",
+      "RSI hovering near the midpoint with no clear momentum for WDAY.",
+      "Consolidation pattern forming with low volatility in WDAY."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "VEEV",
+    "company": "Veeva Systems",
+    "price": 218.4,
+    "direction": "bearish",
+    "confidence": 0.47,
+    "target": 193.82,
+    "timeframe": "7d",
+    "reasoning": [
+      "RSI showing bearish divergence on the daily chart for VEEV.",
+      "Momentum indicators on VEEV are trending down over the last 14 sessions.",
+      "Negative sentiment shift detected across analyst reports for VEEV."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "HUBS",
+    "company": "HubSpot Inc.",
+    "price": 628.4,
+    "direction": "bearish",
+    "confidence": 0.61,
+    "target": 535.26,
+    "timeframe": "30d",
+    "reasoning": [
+      "Distribution pattern detected with above-average selling pressure on HUBS.",
+      "Negative sentiment shift detected across analyst reports for HUBS.",
+      "RSI showing bearish divergence on the daily chart for HUBS."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "SE",
+    "company": "Sea Limited",
+    "price": 88.4,
+    "direction": "bearish",
+    "confidence": 0.91,
+    "target": 76.91,
+    "timeframe": "30d",
+    "reasoning": [
+      "Breaking below the 200-day moving average with heavy volume for SE.",
+      "Key resistance level rejecting price advances for SE.",
+      "Relative strength versus S&P 500 at multi-week lows for SE."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "CPNG",
+    "company": "Coupang Inc.",
+    "price": 22.6,
+    "direction": "bearish",
+    "confidence": 0.86,
+    "target": 20.83,
+    "timeframe": "3d",
+    "reasoning": [
+      "Earnings revision estimates trending lower ahead of next quarter for Coupang Inc..",
+      "Breaking below the 200-day moving average with heavy volume for CPNG.",
+      "Institutional outflows have increased 15% over the past week for CPNG."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "MELI",
+    "company": "MercadoLibre",
+    "price": 1782.3,
+    "direction": "bearish",
+    "confidence": 0.58,
+    "target": 1611.1,
+    "timeframe": "30d",
+    "reasoning": [
+      "Momentum indicators on MELI are trending down over the last 14 sessions.",
+      "Sector headwinds impacting Consumer stocks with MELI facing elevated risk.",
+      "Breaking below the 200-day moving average with heavy volume for MELI."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor",
+    "price": 168.5,
+    "direction": "neutral",
+    "confidence": 0.88,
+    "target": 168.34,
+    "timeframe": "7d",
+    "reasoning": [
+      "RSI hovering near the midpoint with no clear momentum for TSM.",
+      "Balanced institutional flows with no clear directional bias for TSM.",
+      "Mixed signals from technical indicators suggest a wait-and-see approach on TSM."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "ASML",
+    "company": "ASML Holding",
+    "price": 882.4,
+    "direction": "bearish",
+    "confidence": 0.86,
+    "target": 793.97,
+    "timeframe": "30d",
+    "reasoning": [
+      "Weakening demand signals from recent channel checks for ASML Holding.",
+      "Analyst downgrades outnumber upgrades 2-to-1 in the last month for ASML Holding.",
+      "Head and shoulders pattern forming on the daily chart for ASML."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "QCOM",
+    "company": "Qualcomm Inc.",
+    "price": 198.3,
+    "direction": "bearish",
+    "confidence": 0.64,
+    "target": 185.66,
+    "timeframe": "7d",
+    "reasoning": [
+      "Head and shoulders pattern forming on the daily chart for QCOM.",
+      "Weakening demand signals from recent channel checks for Qualcomm Inc.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "AVGO",
+    "company": "Broadcom Inc.",
+    "price": 168.5,
+    "direction": "bullish",
+    "confidence": 0.7,
+    "target": 184.8,
+    "timeframe": "30d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on AVGO.",
+      "RSI showing bullish divergence on the daily chart for AVGO."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "TXN",
+    "company": "Texas Instruments",
+    "price": 188.4,
+    "direction": "bullish",
+    "confidence": 0.47,
+    "target": 213.5,
+    "timeframe": "14d",
+    "reasoning": [
+      "Volume breakout detected with above-average buying pressure on TXN.",
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for TXN."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "MRVL",
+    "company": "Marvell Technology",
+    "price": 72.6,
+    "direction": "bullish",
+    "confidence": 0.62,
+    "target": 80.59,
+    "timeframe": "14d",
+    "reasoning": [
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for Marvell Technology.",
+      "MACD histogram turning positive with increasing momentum for MRVL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "NXPI",
+    "company": "NXP Semiconductors",
+    "price": 248.3,
+    "direction": "bearish",
+    "confidence": 0.76,
+    "target": 239.7,
+    "timeframe": "7d",
+    "reasoning": [
+      "Money flow index indicates sustained distribution in NXPI.",
+      "Weakening demand signals from recent channel checks for NXP Semiconductors.",
+      "Distribution pattern detected with above-average selling pressure on NXPI."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "AMAT",
+    "company": "Applied Materials",
+    "price": 198.6,
+    "direction": "bullish",
+    "confidence": 0.77,
+    "target": 226.35,
+    "timeframe": "3d",
+    "reasoning": [
+      "Volume breakout detected with above-average buying pressure on AMAT.",
+      "Relative strength versus S&P 500 at multi-week highs for AMAT."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "ON",
+    "company": "ON Semiconductor",
+    "price": 68.3,
+    "direction": "bullish",
+    "confidence": 0.83,
+    "target": 75.92,
+    "timeframe": "14d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on ON.",
+      "Moving average crossover signals continued upward momentum for ON."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Technology"
+  },
+  {
+    "ticker": "ENPH",
+    "company": "Enphase Energy",
+    "price": 128.5,
+    "direction": "bullish",
+    "confidence": 0.84,
+    "target": 144.37,
+    "timeframe": "7d",
+    "reasoning": [
+      "On-balance volume trending higher confirming price advance for ENPH.",
+      "Money flow index indicates sustained accumulation in ENPH.",
+      "Relative strength versus S&P 500 at multi-week highs for ENPH."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "FSLR",
+    "company": "First Solar",
+    "price": 228.6,
+    "direction": "neutral",
+    "confidence": 0.52,
+    "target": 231.09,
+    "timeframe": "3d",
+    "reasoning": [
+      "Mixed signals from technical indicators suggest a wait-and-see approach on FSLR.",
+      "Trading range bound between key support and resistance levels for FSLR."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "NEE",
+    "company": "NextEra Energy",
+    "price": 78.5,
+    "direction": "bullish",
+    "confidence": 0.75,
+    "target": 83.97,
+    "timeframe": "7d",
+    "reasoning": [
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for NEE.",
+      "Institutional inflows have increased 12% over the past week for NEE."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "CVX",
+    "company": "Chevron Corp.",
+    "price": 158.4,
+    "direction": "bullish",
+    "confidence": 0.68,
+    "target": 166.8,
+    "timeframe": "7d",
+    "reasoning": [
+      "Momentum indicators on CVX are trending up over the last 14 sessions.",
+      "Short interest declining 8% suggesting improving sentiment on CVX.",
+      "Sector rotation favoring Energy stocks with CVX as a top beneficiary."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "COP",
+    "company": "ConocoPhillips",
+    "price": 118.6,
+    "direction": "bullish",
+    "confidence": 0.61,
+    "target": 136.2,
+    "timeframe": "14d",
+    "reasoning": [
+      "Relative strength versus S&P 500 at multi-week highs for COP.",
+      "Strong support level holding at current price with low downside risk for COP.",
+      "Short interest declining 8% suggesting improving sentiment on COP."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "SLB",
+    "company": "Schlumberger",
+    "price": 48.3,
+    "direction": "bearish",
+    "confidence": 0.52,
+    "target": 44.09,
+    "timeframe": "14d",
+    "reasoning": [
+      "MACD histogram turning negative with increasing selling momentum for SLB.",
+      "On-balance volume trending lower confirming price decline for SLB."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "EOG",
+    "company": "EOG Resources",
+    "price": 128.5,
+    "direction": "bullish",
+    "confidence": 0.87,
+    "target": 147.41,
+    "timeframe": "30d",
+    "reasoning": [
+      "Strong support level holding at current price with low downside risk for EOG.",
+      "Momentum indicators on EOG are trending up over the last 14 sessions.",
+      "Recent supply chain analysis suggests strong Q2 demand for EOG Resources."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "MPC",
+    "company": "Marathon Petroleum",
+    "price": 178.5,
+    "direction": "bullish",
+    "confidence": 0.94,
+    "target": 200.07,
+    "timeframe": "7d",
+    "reasoning": [
+      "On-balance volume trending higher confirming price advance for MPC.",
+      "Positive sentiment shift detected across social media mentions for MPC."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "VLO",
+    "company": "Valero Energy",
+    "price": 152.6,
+    "direction": "bearish",
+    "confidence": 0.76,
+    "target": 143.16,
+    "timeframe": "14d",
+    "reasoning": [
+      "RSI showing bearish divergence on the daily chart for VLO.",
+      "Weakening demand signals from recent channel checks for Valero Energy."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "HAL",
+    "company": "Halliburton Co.",
+    "price": 38.4,
+    "direction": "bullish",
+    "confidence": 0.84,
+    "target": 39.33,
+    "timeframe": "14d",
+    "reasoning": [
+      "Institutional inflows have increased 12% over the past week for HAL.",
+      "Volume breakout detected with above-average buying pressure on HAL.",
+      "Sector rotation favoring Energy stocks with HAL as a top beneficiary."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "FANG",
+    "company": "Diamondback Energy",
+    "price": 198.3,
+    "direction": "bearish",
+    "confidence": 0.82,
+    "target": 173.08,
+    "timeframe": "14d",
+    "reasoning": [
+      "Money flow index indicates sustained distribution in FANG.",
+      "On-balance volume trending lower confirming price decline for FANG."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "DVN",
+    "company": "Devon Energy",
+    "price": 48.6,
+    "direction": "bullish",
+    "confidence": 0.86,
+    "target": 54.78,
+    "timeframe": "30d",
+    "reasoning": [
+      "Sector rotation favoring Energy stocks with DVN as a top beneficiary.",
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for Devon Energy.",
+      "RSI showing bullish divergence on the daily chart for DVN."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "CEG",
+    "company": "Constellation Energy",
+    "price": 268.3,
+    "direction": "bearish",
+    "confidence": 0.85,
+    "target": 261.77,
+    "timeframe": "30d",
+    "reasoning": [
+      "Money flow index indicates sustained distribution in CEG.",
+      "On-balance volume trending lower confirming price decline for CEG.",
+      "Distribution pattern detected with above-average selling pressure on CEG."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "VST",
+    "company": "Vistra Corp.",
+    "price": 128.6,
+    "direction": "neutral",
+    "confidence": 0.54,
+    "target": 128.25,
+    "timeframe": "14d",
+    "reasoning": [
+      "RSI hovering near the midpoint with no clear momentum for VST.",
+      "Sector-neutral positioning recommended until clearer signals emerge for VST.",
+      "Volume declining at current levels suggesting indecision in VST."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "SO",
+    "company": "Southern Co.",
+    "price": 88.6,
+    "direction": "bullish",
+    "confidence": 0.49,
+    "target": 90.66,
+    "timeframe": "14d",
+    "reasoning": [
+      "Positive sentiment shift detected across social media mentions for SO.",
+      "Volume breakout detected with above-average buying pressure on SO.",
+      "Short interest declining 8% suggesting improving sentiment on SO."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "DUK",
+    "company": "Duke Energy",
+    "price": 108.3,
+    "direction": "bullish",
+    "confidence": 0.77,
+    "target": 112.11,
+    "timeframe": "30d",
+    "reasoning": [
+      "Recent supply chain analysis suggests strong Q2 demand for Duke Energy.",
+      "Sector rotation favoring Energy stocks with DUK as a top beneficiary."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Energy"
+  },
+  {
+    "ticker": "AMT",
+    "company": "American Tower",
+    "price": 218.5,
+    "direction": "bearish",
+    "confidence": 0.49,
+    "target": 200.99,
+    "timeframe": "7d",
+    "reasoning": [
+      "Short interest increasing 10% suggesting growing bearish sentiment on AMT.",
+      "On-balance volume trending lower confirming price decline for AMT.",
+      "Relative strength versus S&P 500 at multi-week lows for AMT."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Real Estate"
+  },
+  {
+    "ticker": "PLD",
+    "company": "Prologis Inc.",
+    "price": 128.4,
+    "direction": "bullish",
+    "confidence": 0.91,
+    "target": 144.88,
+    "timeframe": "7d",
+    "reasoning": [
+      "Strong support level holding at current price with low downside risk for PLD.",
+      "Recent supply chain analysis suggests strong Q2 demand for Prologis Inc..",
+      "On-balance volume trending higher confirming price advance for PLD."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Real Estate"
+  },
+  {
+    "ticker": "CCI",
+    "company": "Crown Castle",
+    "price": 108.6,
+    "direction": "bearish",
+    "confidence": 0.67,
+    "target": 105.73,
+    "timeframe": "3d",
+    "reasoning": [
+      "RSI showing bearish divergence on the daily chart for CCI.",
+      "On-balance volume trending lower confirming price decline for CCI.",
+      "Breaking below the 200-day moving average with heavy volume for CCI."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Real Estate"
+  },
+  {
+    "ticker": "EQIX",
+    "company": "Equinix Inc.",
+    "price": 828.3,
+    "direction": "bullish",
+    "confidence": 0.65,
+    "target": 865.3,
+    "timeframe": "7d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on EQIX.",
+      "Volume breakout detected with above-average buying pressure on EQIX."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Real Estate"
+  },
+  {
+    "ticker": "SPG",
+    "company": "Simon Property Group",
+    "price": 152.4,
+    "direction": "bearish",
+    "confidence": 0.77,
+    "target": 141.37,
+    "timeframe": "7d",
+    "reasoning": [
+      "Weakening demand signals from recent channel checks for Simon Property Group.",
+      "Analyst downgrades outnumber upgrades 2-to-1 in the last month for Simon Property Group."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Real Estate"
+  },
+  {
+    "ticker": "O",
+    "company": "Realty Income",
+    "price": 58.3,
+    "direction": "bullish",
+    "confidence": 0.92,
+    "target": 61.02,
+    "timeframe": "14d",
+    "reasoning": [
+      "Earnings revision estimates trending higher ahead of next quarter for Realty Income.",
+      "Positive sentiment shift detected across social media mentions for O."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Real Estate"
+  },
+  {
+    "ticker": "WELL",
+    "company": "Welltower Inc.",
+    "price": 108.5,
+    "direction": "bullish",
+    "confidence": 0.84,
+    "target": 121.79,
+    "timeframe": "7d",
+    "reasoning": [
+      "Strong support level holding at current price with low downside risk for WELL.",
+      "Institutional inflows have increased 12% over the past week for WELL."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Real Estate"
+  },
+  {
+    "ticker": "DLR",
+    "company": "Digital Realty",
+    "price": 148.6,
+    "direction": "bearish",
+    "confidence": 0.72,
+    "target": 141.74,
+    "timeframe": "3d",
+    "reasoning": [
+      "Momentum indicators on DLR are trending down over the last 14 sessions.",
+      "Institutional outflows have increased 15% over the past week for DLR."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Real Estate"
+  },
+  {
+    "ticker": "PSA",
+    "company": "Public Storage",
+    "price": 288.4,
+    "direction": "bullish",
+    "confidence": 0.63,
+    "target": 323.73,
+    "timeframe": "3d",
+    "reasoning": [
+      "Momentum indicators on PSA are trending up over the last 14 sessions.",
+      "Moving average crossover signals continued upward momentum for PSA.",
+      "Strong support level holding at current price with low downside risk for PSA."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Real Estate"
+  },
+  {
+    "ticker": "TGT",
+    "company": "Target Corp.",
+    "price": 158.4,
+    "direction": "bullish",
+    "confidence": 0.52,
+    "target": 163.91,
+    "timeframe": "14d",
+    "reasoning": [
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for TGT.",
+      "Short interest declining 8% suggesting improving sentiment on TGT."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "LOW",
+    "company": "Lowe's Companies",
+    "price": 228.5,
+    "direction": "bullish",
+    "confidence": 0.71,
+    "target": 236.31,
+    "timeframe": "14d",
+    "reasoning": [
+      "Recent supply chain analysis suggests strong Q2 demand for Lowe's Companies.",
+      "Fibonacci retracement support holding at the 61.8% level for LOW."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "TJX",
+    "company": "TJX Companies",
+    "price": 108.3,
+    "direction": "bullish",
+    "confidence": 0.68,
+    "target": 124.04,
+    "timeframe": "30d",
+    "reasoning": [
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for TJX.",
+      "MACD histogram turning positive with increasing momentum for TJX."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "ROST",
+    "company": "Ross Stores",
+    "price": 148.6,
+    "direction": "bullish",
+    "confidence": 0.79,
+    "target": 161.04,
+    "timeframe": "7d",
+    "reasoning": [
+      "Volume breakout detected with above-average buying pressure on ROST.",
+      "Money flow index indicates sustained accumulation in ROST.",
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for Ross Stores."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "BBY",
+    "company": "Best Buy Co.",
+    "price": 82.4,
+    "direction": "bullish",
+    "confidence": 0.5,
+    "target": 90.83,
+    "timeframe": "30d",
+    "reasoning": [
+      "MACD histogram turning positive with increasing momentum for BBY.",
+      "Fibonacci retracement support holding at the 61.8% level for BBY.",
+      "Sector rotation favoring Consumer stocks with BBY as a top beneficiary."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "DG",
+    "company": "Dollar General",
+    "price": 138.5,
+    "direction": "bullish",
+    "confidence": 0.7,
+    "target": 149.02,
+    "timeframe": "30d",
+    "reasoning": [
+      "Money flow index indicates sustained accumulation in DG.",
+      "Earnings revision estimates trending higher ahead of next quarter for Dollar General."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "SBUX",
+    "company": "Starbucks Corp.",
+    "price": 98.5,
+    "direction": "bearish",
+    "confidence": 0.68,
+    "target": 86.65,
+    "timeframe": "3d",
+    "reasoning": [
+      "Short interest increasing 10% suggesting growing bearish sentiment on SBUX.",
+      "MACD histogram turning negative with increasing selling momentum for SBUX.",
+      "Relative strength versus S&P 500 at multi-week lows for SBUX."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "MCD",
+    "company": "McDonald's Corp.",
+    "price": 288.3,
+    "direction": "bearish",
+    "confidence": 0.61,
+    "target": 256.77,
+    "timeframe": "3d",
+    "reasoning": [
+      "On-balance volume trending lower confirming price decline for MCD.",
+      "Institutional outflows have increased 15% over the past week for MCD.",
+      "Head and shoulders pattern forming on the daily chart for MCD."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "YUM",
+    "company": "Yum! Brands",
+    "price": 138.4,
+    "direction": "bullish",
+    "confidence": 0.46,
+    "target": 148.94,
+    "timeframe": "3d",
+    "reasoning": [
+      "Institutional inflows have increased 12% over the past week for YUM.",
+      "Recent supply chain analysis suggests strong Q2 demand for Yum! Brands.",
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for Yum! Brands."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "DPZ",
+    "company": "Domino's Pizza",
+    "price": 428.5,
+    "direction": "bullish",
+    "confidence": 0.66,
+    "target": 485.73,
+    "timeframe": "14d",
+    "reasoning": [
+      "Recent supply chain analysis suggests strong Q2 demand for Domino's Pizza.",
+      "Sector rotation favoring Consumer stocks with DPZ as a top beneficiary.",
+      "Fibonacci retracement support holding at the 61.8% level for DPZ."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "CMG",
+    "company": "Chipotle Mexican Grill",
+    "price": 58.4,
+    "direction": "bullish",
+    "confidence": 0.54,
+    "target": 60.74,
+    "timeframe": "14d",
+    "reasoning": [
+      "Positive sentiment shift detected across social media mentions for CMG.",
+      "RSI showing bullish divergence on the daily chart for CMG.",
+      "On-balance volume trending higher confirming price advance for CMG."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "LULU",
+    "company": "Lululemon Athletica",
+    "price": 328.4,
+    "direction": "bullish",
+    "confidence": 0.5,
+    "target": 344.62,
+    "timeframe": "3d",
+    "reasoning": [
+      "Money flow index indicates sustained accumulation in LULU.",
+      "Momentum indicators on LULU are trending up over the last 14 sessions.",
+      "Strong support level holding at current price with low downside risk for LULU."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Consumer"
+  },
+  {
+    "ticker": "CAT",
+    "company": "Caterpillar Inc.",
+    "price": 328.3,
+    "direction": "bullish",
+    "confidence": 0.57,
+    "target": 348.05,
+    "timeframe": "7d",
+    "reasoning": [
+      "On-balance volume trending higher confirming price advance for CAT.",
+      "Momentum indicators on CAT are trending up over the last 14 sessions.",
+      "Moving average crossover signals continued upward momentum for CAT."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "DE",
+    "company": "Deere & Company",
+    "price": 388.4,
+    "direction": "bullish",
+    "confidence": 0.73,
+    "target": 416.4,
+    "timeframe": "7d",
+    "reasoning": [
+      "Momentum indicators on DE are trending up over the last 14 sessions.",
+      "Volume breakout detected with above-average buying pressure on DE."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "HON",
+    "company": "Honeywell International",
+    "price": 208.3,
+    "direction": "neutral",
+    "confidence": 0.64,
+    "target": 207.72,
+    "timeframe": "14d",
+    "reasoning": [
+      "Volume declining at current levels suggesting indecision in HON.",
+      "Mixed signals from technical indicators suggest a wait-and-see approach on HON."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "ETN",
+    "company": "Eaton Corp",
+    "price": 318.4,
+    "direction": "neutral",
+    "confidence": 0.84,
+    "target": 319.69,
+    "timeframe": "7d",
+    "reasoning": [
+      "Consolidation pattern forming with low volatility in ETN.",
+      "Trading range bound between key support and resistance levels for ETN."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "LMT",
+    "company": "Lockheed Martin",
+    "price": 468.4,
+    "direction": "bullish",
+    "confidence": 0.83,
+    "target": 480.8,
+    "timeframe": "30d",
+    "reasoning": [
+      "Strong support level holding at current price with low downside risk for LMT.",
+      "Short interest declining 8% suggesting improving sentiment on LMT."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "RTX",
+    "company": "RTX Corp.",
+    "price": 108.3,
+    "direction": "neutral",
+    "confidence": 0.69,
+    "target": 107.92,
+    "timeframe": "3d",
+    "reasoning": [
+      "Balanced institutional flows with no clear directional bias for RTX.",
+      "RSI hovering near the midpoint with no clear momentum for RTX.",
+      "Awaiting upcoming catalyst event before committing to a direction on RTX."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "NOC",
+    "company": "Northrop Grumman",
+    "price": 478.4,
+    "direction": "bullish",
+    "confidence": 0.62,
+    "target": 494.86,
+    "timeframe": "7d",
+    "reasoning": [
+      "Fibonacci retracement support holding at the 61.8% level for NOC.",
+      "Sector rotation favoring Industrial stocks with NOC as a top beneficiary.",
+      "Recent supply chain analysis suggests strong Q2 demand for Northrop Grumman."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "GD",
+    "company": "General Dynamics",
+    "price": 278.3,
+    "direction": "bearish",
+    "confidence": 0.65,
+    "target": 258.24,
+    "timeframe": "7d",
+    "reasoning": [
+      "Earnings revision estimates trending lower ahead of next quarter for General Dynamics.",
+      "Sector headwinds impacting Industrial stocks with GD facing elevated risk."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "MMM",
+    "company": "3M Company",
+    "price": 102.4,
+    "direction": "bullish",
+    "confidence": 0.83,
+    "target": 114.62,
+    "timeframe": "30d",
+    "reasoning": [
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for 3M Company.",
+      "RSI showing bullish divergence on the daily chart for MMM.",
+      "Momentum indicators on MMM are trending up over the last 14 sessions."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "EMR",
+    "company": "Emerson Electric",
+    "price": 108.4,
+    "direction": "neutral",
+    "confidence": 0.82,
+    "target": 106.29,
+    "timeframe": "14d",
+    "reasoning": [
+      "Balanced institutional flows with no clear directional bias for EMR.",
+      "Awaiting upcoming catalyst event before committing to a direction on EMR.",
+      "RSI hovering near the midpoint with no clear momentum for EMR."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "ITW",
+    "company": "Illinois Tool Works",
+    "price": 248.3,
+    "direction": "bullish",
+    "confidence": 0.6,
+    "target": 254.63,
+    "timeframe": "14d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on ITW.",
+      "Volume breakout detected with above-average buying pressure on ITW."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "PH",
+    "company": "Parker Hannifin",
+    "price": 518.3,
+    "direction": "bullish",
+    "confidence": 0.74,
+    "target": 567.3,
+    "timeframe": "3d",
+    "reasoning": [
+      "Sector rotation favoring Industrial stocks with PH as a top beneficiary.",
+      "RSI showing bullish divergence on the daily chart for PH.",
+      "MACD histogram turning positive with increasing momentum for PH."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "ROK",
+    "company": "Rockwell Automation",
+    "price": 278.3,
+    "direction": "bullish",
+    "confidence": 0.85,
+    "target": 318.15,
+    "timeframe": "3d",
+    "reasoning": [
+      "On-balance volume trending higher confirming price advance for ROK.",
+      "Volume breakout detected with above-average buying pressure on ROK.",
+      "Relative strength versus S&P 500 at multi-week highs for ROK."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "AXON",
+    "company": "Axon Enterprise",
+    "price": 328.4,
+    "direction": "bearish",
+    "confidence": 0.55,
+    "target": 301.51,
+    "timeframe": "14d",
+    "reasoning": [
+      "Sector headwinds impacting Industrial stocks with AXON facing elevated risk.",
+      "Analyst downgrades outnumber upgrades 2-to-1 in the last month for Axon Enterprise.",
+      "Negative sentiment shift detected across analyst reports for AXON."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "TDG",
+    "company": "TransDigm Group",
+    "price": 1288.4,
+    "direction": "bearish",
+    "confidence": 0.84,
+    "target": 1107.93,
+    "timeframe": "7d",
+    "reasoning": [
+      "Breaking below the 200-day moving average with heavy volume for TDG.",
+      "Money flow index indicates sustained distribution in TDG."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "IP",
+    "company": "International Paper",
+    "price": 48.4,
+    "direction": "bullish",
+    "confidence": 0.87,
+    "target": 53.94,
+    "timeframe": "7d",
+    "reasoning": [
+      "Positive sentiment shift detected across social media mentions for IP.",
+      "RSI showing bullish divergence on the daily chart for IP."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "SWK",
+    "company": "Stanley Black & Decker",
+    "price": 82.4,
+    "direction": "bearish",
+    "confidence": 0.48,
+    "target": 71.68,
+    "timeframe": "30d",
+    "reasoning": [
+      "Death cross pattern forming on the weekly chart for SWK.",
+      "Head and shoulders pattern forming on the daily chart for SWK."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "GD2",
+    "company": "General Dynamics Corp",
+    "price": 148.4,
+    "direction": "neutral",
+    "confidence": 0.83,
+    "target": 150.71,
+    "timeframe": "14d",
+    "reasoning": [
+      "Volume declining at current levels suggesting indecision in GD2.",
+      "RSI hovering near the midpoint with no clear momentum for GD2.",
+      "Sector-neutral positioning recommended until clearer signals emerge for GD2."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Industrial"
+  },
+  {
+    "ticker": "BDX",
+    "company": "Becton Dickinson",
+    "price": 238.3,
+    "direction": "bullish",
+    "confidence": 0.46,
+    "target": 256.77,
+    "timeframe": "3d",
+    "reasoning": [
+      "Strong support level holding at current price with low downside risk for BDX.",
+      "Recent supply chain analysis suggests strong Q2 demand for Becton Dickinson.",
+      "On-balance volume trending higher confirming price advance for BDX."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "ISRG",
+    "company": "Intuitive Surgical",
+    "price": 398.5,
+    "direction": "bearish",
+    "confidence": 0.61,
+    "target": 362.14,
+    "timeframe": "3d",
+    "reasoning": [
+      "On-balance volume trending lower confirming price decline for ISRG.",
+      "Sector headwinds impacting Healthcare stocks with ISRG facing elevated risk."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "SYK",
+    "company": "Stryker Corp.",
+    "price": 348.4,
+    "direction": "neutral",
+    "confidence": 0.77,
+    "target": 358.38,
+    "timeframe": "3d",
+    "reasoning": [
+      "RSI hovering near the midpoint with no clear momentum for SYK.",
+      "Balanced institutional flows with no clear directional bias for SYK."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "MDT",
+    "company": "Medtronic PLC",
+    "price": 82.3,
+    "direction": "bearish",
+    "confidence": 0.67,
+    "target": 78.62,
+    "timeframe": "7d",
+    "reasoning": [
+      "Analyst downgrades outnumber upgrades 2-to-1 in the last month for Medtronic PLC.",
+      "Head and shoulders pattern forming on the daily chart for MDT."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "BSX",
+    "company": "Boston Scientific",
+    "price": 78.5,
+    "direction": "bearish",
+    "confidence": 0.88,
+    "target": 75.0,
+    "timeframe": "3d",
+    "reasoning": [
+      "Distribution pattern detected with above-average selling pressure on BSX.",
+      "Breaking below the 200-day moving average with heavy volume for BSX.",
+      "Death cross pattern forming on the weekly chart for BSX."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "ZTS",
+    "company": "Zoetis Inc.",
+    "price": 178.4,
+    "direction": "bullish",
+    "confidence": 0.52,
+    "target": 192.16,
+    "timeframe": "14d",
+    "reasoning": [
+      "On-balance volume trending higher confirming price advance for ZTS.",
+      "Money flow index indicates sustained accumulation in ZTS."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "REGN",
+    "company": "Regeneron Pharmaceuticals",
+    "price": 888.3,
+    "direction": "bullish",
+    "confidence": 0.64,
+    "target": 995.5,
+    "timeframe": "14d",
+    "reasoning": [
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for Regeneron Pharmaceuticals.",
+      "Volume breakout detected with above-average buying pressure on REGN."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "VRTX",
+    "company": "Vertex Pharmaceuticals",
+    "price": 428.5,
+    "direction": "bullish",
+    "confidence": 0.57,
+    "target": 452.9,
+    "timeframe": "7d",
+    "reasoning": [
+      "Analyst upgrades outnumber downgrades 3-to-1 in the last month for Vertex Pharmaceuticals.",
+      "Volume breakout detected with above-average buying pressure on VRTX."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "GILD",
+    "company": "Gilead Sciences",
+    "price": 82.4,
+    "direction": "bullish",
+    "confidence": 0.87,
+    "target": 91.08,
+    "timeframe": "30d",
+    "reasoning": [
+      "Institutional inflows have increased 12% over the past week for GILD.",
+      "Volume breakout detected with above-average buying pressure on GILD.",
+      "Sector rotation favoring Healthcare stocks with GILD as a top beneficiary."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "BIIB",
+    "company": "Biogen Inc.",
+    "price": 218.3,
+    "direction": "bullish",
+    "confidence": 0.77,
+    "target": 231.99,
+    "timeframe": "30d",
+    "reasoning": [
+      "Fibonacci retracement support holding at the 61.8% level for BIIB.",
+      "Volume breakout detected with above-average buying pressure on BIIB."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "AMGN",
+    "company": "Amgen Inc.",
+    "price": 288.4,
+    "direction": "bearish",
+    "confidence": 0.7,
+    "target": 245.82,
+    "timeframe": "30d",
+    "reasoning": [
+      "Death cross pattern forming on the weekly chart for AMGN.",
+      "Earnings revision estimates trending lower ahead of next quarter for Amgen Inc..",
+      "Analyst downgrades outnumber upgrades 2-to-1 in the last month for Amgen Inc.."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "BMY",
+    "company": "Bristol-Myers Squibb",
+    "price": 52.3,
+    "direction": "bearish",
+    "confidence": 0.62,
+    "target": 45.51,
+    "timeframe": "14d",
+    "reasoning": [
+      "RSI showing bearish divergence on the daily chart for BMY.",
+      "Breaking below the 200-day moving average with heavy volume for BMY.",
+      "Weakening demand signals from recent channel checks for Bristol-Myers Squibb."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "LLY2",
+    "company": "Eli Lilly Intl",
+    "price": 148.4,
+    "direction": "bullish",
+    "confidence": 0.9,
+    "target": 162.89,
+    "timeframe": "7d",
+    "reasoning": [
+      "Moving average crossover signals continued upward momentum for LLY2.",
+      "Money flow index indicates sustained accumulation in LLY2."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "MCK",
+    "company": "McKesson Corp.",
+    "price": 498.3,
+    "direction": "bearish",
+    "confidence": 0.81,
+    "target": 426.39,
+    "timeframe": "30d",
+    "reasoning": [
+      "Negative sentiment shift detected across analyst reports for MCK.",
+      "Short interest increasing 10% suggesting growing bearish sentiment on MCK.",
+      "Sector headwinds impacting Healthcare stocks with MCK facing elevated risk."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "CI",
+    "company": "Cigna Group",
+    "price": 338.4,
+    "direction": "neutral",
+    "confidence": 0.49,
+    "target": 347.85,
+    "timeframe": "30d",
+    "reasoning": [
+      "Balanced institutional flows with no clear directional bias for CI.",
+      "Mixed signals from technical indicators suggest a wait-and-see approach on CI.",
+      "Volume declining at current levels suggesting indecision in CI."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "HUM",
+    "company": "Humana Inc.",
+    "price": 358.3,
+    "direction": "bullish",
+    "confidence": 0.68,
+    "target": 378.59,
+    "timeframe": "7d",
+    "reasoning": [
+      "Fibonacci retracement support holding at the 61.8% level for HUM.",
+      "Money flow index indicates sustained accumulation in HUM.",
+      "Relative strength versus S&P 500 at multi-week highs for HUM."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "ELV",
+    "company": "Elevance Health",
+    "price": 448.4,
+    "direction": "bullish",
+    "confidence": 0.93,
+    "target": 465.44,
+    "timeframe": "3d",
+    "reasoning": [
+      "Recent supply chain analysis suggests strong Q2 demand for Elevance Health.",
+      "Bollinger Band squeeze indicating an imminent breakout to the upside for ELV.",
+      "On-balance volume trending higher confirming price advance for ELV."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "AET",
+    "company": "Aetna Inc.",
+    "price": 188.3,
+    "direction": "bullish",
+    "confidence": 0.81,
+    "target": 204.69,
+    "timeframe": "7d",
+    "reasoning": [
+      "Sector rotation favoring Healthcare stocks with AET as a top beneficiary.",
+      "Volume breakout detected with above-average buying pressure on AET."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "CVS",
+    "company": "CVS Health Corp.",
+    "price": 68.4,
+    "direction": "bullish",
+    "confidence": 0.6,
+    "target": 71.08,
+    "timeframe": "14d",
+    "reasoning": [
+      "Volume breakout detected with above-average buying pressure on CVS.",
+      "Positive sentiment shift detected across social media mentions for CVS.",
+      "Short interest declining 8% suggesting improving sentiment on CVS."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "WBA",
+    "company": "Walgreens Boots",
+    "price": 12.3,
+    "direction": "bullish",
+    "confidence": 0.88,
+    "target": 13.18,
+    "timeframe": "14d",
+    "reasoning": [
+      "Positive sentiment shift detected across social media mentions for WBA.",
+      "MACD histogram turning positive with increasing momentum for WBA.",
+      "Volume breakout detected with above-average buying pressure on WBA."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "CAH",
+    "company": "Cardinal Health",
+    "price": 108.4,
+    "direction": "bullish",
+    "confidence": 0.5,
+    "target": 111.96,
+    "timeframe": "14d",
+    "reasoning": [
+      "Institutional inflows have increased 12% over the past week for CAH.",
+      "Money flow index indicates sustained accumulation in CAH.",
+      "Recent supply chain analysis suggests strong Q2 demand for Cardinal Health."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "ABC",
+    "company": "AmerisourceBergen",
+    "price": 188.3,
+    "direction": "bullish",
+    "confidence": 0.89,
+    "target": 212.41,
+    "timeframe": "3d",
+    "reasoning": [
+      "Short interest declining 8% suggesting improving sentiment on ABC.",
+      "Momentum indicators on ABC are trending up over the last 14 sessions.",
+      "Volume breakout detected with above-average buying pressure on ABC."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  },
+  {
+    "ticker": "HSIC",
+    "company": "Henry Schein",
+    "price": 72.4,
+    "direction": "bearish",
+    "confidence": 0.59,
+    "target": 66.71,
+    "timeframe": "14d",
+    "reasoning": [
+      "RSI showing bearish divergence on the daily chart for HSIC.",
+      "Sector headwinds impacting Healthcare stocks with HSIC facing elevated risk.",
+      "Negative sentiment shift detected across analyst reports for HSIC."
+    ],
+    "updatedAt": "2026-06-11",
+    "sector": "Healthcare"
+  }
+]

@@ -1,67 +1,110 @@
-"use client";
+import { auth } from "@/lib/auth";
+import { prisma } from "@/lib/db";
+import { updateProfile, updatePreferences } from "./actions";
+import PreferencesForm from "./PreferencesForm";
 
-import { useSession } from "next-auth/react";
-import { useState } from "react";
-import Card from "@/components/ui/Card";
+export default async function SettingsPage() {
+  const session = await auth();
+  if (!session?.user?.id) return null;
 
-export default function SettingsPage() {
-  const { data: session } = useSession();
-  const [saved, setSaved] = useState(false);
+  const user = await prisma.user.findUnique({
+    where: { id: session.user.id },
+    select: { id: true, name: true, email: true, preferences: true },
+  });
+
+  if (!user) return null;
+
+  let preferences: {
+    dailyDigest: boolean;
+    highConfidenceAlerts: boolean;
+    watchlistAlerts: boolean;
+    marketing: boolean;
+  } = {
+    dailyDigest: true,
+    highConfidenceAlerts: true,
+    watchlistAlerts: false,
+    marketing: false,
+  };
+
+  if (user.preferences) {
+    try {
+      preferences = JSON.parse(user.preferences);
+    } catch {
+      // use defaults
+    }
+  }
 
   return (
-    <div className="space-y-6 max-w-xl">
-      <Card>
-        <h2 className="text-lg font-semibold text-[#1F2937] mb-4">Account</h2>
-        <div className="space-y-4">
+    <div className="p-6 lg:p-8 space-y-6 max-w-2xl">
+      {/* Profile card */}
+      <div className="rounded-lg border border-[#E5E7EB] bg-white p-6">
+        <h2 className="text-lg font-semibold text-[#1F2937] mb-4">Profile</h2>
+        <form action={updateProfile} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-[#374151] mb-1">Name</label>
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-[#374151] mb-1"
+            >
+              Name
+            </label>
             <input
+              id="name"
+              name="name"
               type="text"
-              defaultValue={session?.user?.name || ""}
+              defaultValue={user.name || ""}
               className="w-full rounded-lg border border-[#D1D5DB] px-3 py-2.5 text-sm text-[#1F2937] focus:outline-none focus:border-[#7CB9E8] focus:ring-1 focus:ring-[#7CB9E8]"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-[#374151] mb-1">Email</label>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-[#374151] mb-1"
+            >
+              Email
+            </label>
             <input
+              id="email"
               type="email"
-              defaultValue={session?.user?.email || ""}
+              value={user.email || ""}
               disabled
               className="w-full rounded-lg border border-[#D1D5DB] px-3 py-2.5 text-sm text-[#1F2937] bg-[#F9FAFB] cursor-not-allowed"
             />
           </div>
+          <button
+            type="submit"
+            className="rounded-lg bg-[#7CB9E8] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#7CB9E8]/90 transition-colors"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+
+      {/* Notifications card */}
+      <div className="rounded-lg border border-[#E5E7EB] bg-white p-6">
+        <h2 className="text-lg font-semibold text-[#1F2937] mb-4">
+          Notifications
+        </h2>
+        <PreferencesForm preferences={preferences} />
+      </div>
+
+      {/* Subscription card */}
+      <div className="rounded-lg border border-[#E5E7EB] bg-white p-6">
+        <h2 className="text-lg font-semibold text-[#1F2937] mb-4">
+          Subscription
+        </h2>
+        <div className="flex items-center justify-between">
           <div>
-            <label className="block text-sm font-medium text-[#374151] mb-1">Plan</label>
-            <div className="rounded-lg border border-[#D1D5DB] bg-[#F9FAFB] px-3 py-2.5 text-sm text-[#6B7280]">
-              Free tier
-            </div>
+            <p className="text-sm text-[#1F2937]">Current plan</p>
+            <p className="text-xs text-[#6B7280] mt-1">Free tier</p>
           </div>
+          <a
+            href="/pricing"
+            className="rounded-lg bg-[#1F2937] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#374151] transition-colors"
+          >
+            Upgrade to Pro
+          </a>
         </div>
-      </Card>
-
-      <Card>
-        <h2 className="text-lg font-semibold text-[#1F2937] mb-4">Notifications</h2>
-        <div className="space-y-3">
-          <label className="flex items-center gap-3">
-            <input type="checkbox" defaultChecked className="h-4 w-4 rounded border-[#D1D5DB] text-[#7CB9E8] focus:ring-[#7CB9E8]" />
-            <span className="text-sm text-[#374151]">Daily prediction digest</span>
-          </label>
-          <label className="flex items-center gap-3">
-            <input type="checkbox" defaultChecked className="h-4 w-4 rounded border-[#D1D5DB] text-[#7CB9E8] focus:ring-[#7CB9E8]" />
-            <span className="text-sm text-[#374151]">New signal alerts</span>
-          </label>
-          <label className="flex items-center gap-3">
-            <input type="checkbox" className="h-4 w-4 rounded border-[#D1D5DB] text-[#7CB9E8] focus:ring-[#7CB9E8]" />
-            <span className="text-sm text-[#374151]">Weekly portfolio summary</span>
-          </label>
-        </div>
-      </Card>
-
-      {saved && (
-        <div className="rounded-lg bg-[#98D8C8]/20 border border-[#98D8C8]/30 p-3 text-sm text-[#1F2937]">
-          Settings saved successfully.
-        </div>
-      )}
+      </div>
     </div>
   );
 }

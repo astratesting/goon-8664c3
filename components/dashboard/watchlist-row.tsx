@@ -5,7 +5,7 @@ import { X } from "lucide-react";
 import type { WatchlistItem } from "@/types/watchlist";
 import { TickerPill } from "./ticker-pill";
 import { DeltaPill } from "./delta-pill";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/signal-badge";
 import { Sparkline } from "./sparkline";
 
 export function WatchlistRow({

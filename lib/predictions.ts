@@ -1,17 +1,59 @@
 import { Prediction } from "@/types/prediction";
 import predictionsData from "@/data/predictions.json";
 
+type RawPrediction = {
+  ticker: string;
+  company: string;
+  price: number;
+  direction: string;
+  confidence: number;
+  target: number;
+  timeframe: string;
+  reasoning: string[];
+  updatedAt: string;
+  sector: string;
+};
+
+function mapPrediction(raw: RawPrediction): Prediction {
+  const delta = ((raw.target - raw.price) / raw.price) * 100;
+  return {
+    id: raw.ticker,
+    ticker: raw.ticker,
+    companyName: raw.company,
+    currentPrice: raw.price,
+    direction: raw.direction as "bullish" | "bearish" | "neutral",
+    confidence: raw.confidence,
+    priceTarget: raw.target,
+    timeHorizon: raw.timeframe,
+    delta: Math.round(delta * 100) / 100,
+    factors: raw.reasoning,
+    sentiment: {
+      score: raw.direction === "bullish" ? 0.7 : raw.direction === "bearish" ? 0.3 : 0.5,
+      label: raw.direction === "bullish" ? "Positive" : raw.direction === "bearish" ? "Negative" : "Neutral",
+    },
+    technicals: { rsi: 50 + raw.confidence * 30, macd: raw.direction === "bullish" ? "Bullish crossover" : "Bearish crossover", ema: "20/50 aligned" },
+    volume: { ratio: 1.2, unusual: false, label: "Normal" },
+    similarPatterns: [],
+    history: [],
+    chartData: [],
+    createdAt: raw.updatedAt,
+    status: "active",
+  };
+}
+
+const allPredictions: Prediction[] = (predictionsData as RawPrediction[]).map(mapPrediction);
+
 export function getPredictions(filters?: {
   direction?: string;
   minConfidence?: number;
   search?: string;
 }): Prediction[] {
-  let results = predictionsData as Prediction[];
+  let results = allPredictions;
 
   if (filters?.search) {
     const q = filters.search.toUpperCase();
     results = results.filter(
-      (p) => p.ticker.toUpperCase().includes(q) || p.company.toUpperCase().includes(q)
+      (p) => p.ticker.toUpperCase().includes(q) || p.companyName.toUpperCase().includes(q)
     );
   }
 
@@ -20,20 +62,21 @@ export function getPredictions(filters?: {
   }
 
   if (filters?.minConfidence) {
-    results = results.filter((p) => p.confidence >= filters.minConfidence);
+    const min = filters.minConfidence;
+    results = results.filter((p) => p.confidence >= min);
   }
 
   return results;
 }
 
 export function getPrediction(ticker: string): Prediction | undefined {
-  return (predictionsData as Prediction[]).find(
+  return allPredictions.find(
     (p) => p.ticker.toUpperCase() === ticker.toUpperCase()
   );
 }
 
 export function getTopPredictions(limit = 5): Prediction[] {
-  return (predictionsData as Prediction[])
+  return [...allPredictions]
     .sort((a, b) => b.confidence - a.confidence)
     .slice(0, limit);
 }
@@ -43,7 +86,7 @@ export function getAccuracy(): number {
 }
 
 export function getMarketSentiment(): { score: number; label: string } {
-  const data = predictionsData as Prediction[];
+  const data = allPredictions;
   const bullish = data.filter((p) => p.direction === "bullish").length;
   const bearish = data.filter((p) => p.direction === "bearish").length;
   const total = data.length;
@@ -59,8 +102,8 @@ export function getMarketSentiment(): { score: number; label: string } {
 
 export function getSignalsTodayCount(): number {
   const today = new Date().toISOString().split("T")[0];
-  return (predictionsData as Prediction[]).filter(
-    (p) => p.updatedAt.startsWith(today)
+  return allPredictions.filter(
+    (p) => p.createdAt.startsWith(today)
   ).length;
 }
 
