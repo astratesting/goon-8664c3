@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getServerSession } from 'next-auth';
-import { authOptions } from '@/lib/auth';
+import { auth } from '@/lib/auth';
 
 function seededRandom(seed: number): number {
   const x = Math.sin(seed * 9301 + 49297) * 49297;
@@ -46,14 +45,15 @@ const BEARISH_FACTORS = [
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { ticker: string } }
+  { params }: { params: Promise<{ ticker: string }> }
 ) {
-  const session = await getServerSession(authOptions);
+  const session = await auth();
   if (!session) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const ticker = params.ticker.toUpperCase();
+  const { ticker: rawTicker } = await params;
+  const ticker = rawTicker.toUpperCase();
   const seed = getTickerSeed(ticker);
   const basePrice = BASE_PRICES[ticker] || 100 + (seed % 900);
 
