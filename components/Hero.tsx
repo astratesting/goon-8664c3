@@ -17,14 +17,14 @@ export default function Hero() {
         </div>
 
         <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6 text-white">
-          Predict. Profit.{" "}
-          <span className="text-gradient">Repeat.</span>
+          Your AI Trading Edge{" "}
+          <span className="text-gradient">— Delivered</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
-          Goon&apos;s deep-learning models analyze alternative data — executive speech patterns,
-          supply chain logistics, social sentiment — and explain every prediction in plain English.
-          No charts, no jargon, just signals you can act on.
+          Get probability-backed trade signals from deep-learning models that analyze
+          alternative data — executive speech patterns, supply chain logistics, social
+          sentiment — all explained in plain English. No financial background required.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
