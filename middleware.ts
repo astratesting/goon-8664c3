@@ -4,9 +4,10 @@ import { NextResponse } from "next/server";
 export default auth((req) => {
   const isLoggedIn = !!req.auth;
   const isAuthPage = req.nextUrl.pathname.startsWith("/auth");
+  const isOnboarding = req.nextUrl.pathname.startsWith("/onboarding");
   const isDashboard = req.nextUrl.pathname.startsWith("/dashboard");
 
-  if (isDashboard && !isLoggedIn) {
+  if ((isDashboard || isOnboarding) && !isLoggedIn) {
     const callbackUrl = req.nextUrl.pathname;
     const loginUrl = new URL("/auth/signin", req.nextUrl.origin);
     loginUrl.searchParams.set("callbackUrl", callbackUrl);
@@ -17,6 +18,6 @@ export default auth((req) => {
 });
 
 export const config = {
-  matcher: ["/dashboard/:path*", "/auth/:path*"],
+  matcher: ["/dashboard/:path*", "/onboarding/:path*", "/auth/:path*"],
   runtime: "nodejs",
 };
