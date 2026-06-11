@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String
+  passwordHash String
+  tier         String   @default("free")
+  preferences  String   @default("{}")
+  createdAt    DateTime @default(now())
+  watchlist    WatchlistItem[]
+  portfolio    PortfolioItem[]
+}
+
+model WatchlistItem {
+  id      String   @id @default(cuid())
+  userId  String
+  ticker  String
+  addedAt DateTime @default(now())
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, ticker])
+  @@index([userId])
+}
+
+model PortfolioItem {
+  id      String  @id @default(cuid())
+  userId  String
+  ticker  String
+  shares  Float
+  avgCost Float
+  hidden  Boolean @default(false)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}

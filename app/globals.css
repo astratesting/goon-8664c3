@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@font-face {
+  font-family: 'Geist';
+  src: local('Geist'), local('Arial'), local('Helvetica Neue');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --sky: #7CB9E8;
+  --mint: #98D8C8;
+  --sand: #E8D5B7;
+  --softwhite: #FAFAFA;
+  --paper: #FAFAF5;
+  --ink: #1F2937;
+  --ink-soft: #6B7280;
+  --cloud: #EEF2F6;
+  --line: #E5E7EB;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Geist', system-ui, -apple-system, sans-serif;
+  background-color: var(--softwhite);
+  color: #1a1a2e;
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #FAFAFA 0%, #e8f4f8 30%, #f0f7f4 60%, #fdf6ed 100%);
+}
+
+.gradient-sky-mint {
+  background: linear-gradient(135deg, #87CEEB 0%, #98D8C8 100%);
+}
+
+.gradient-sand-sky {
+  background: linear-gradient(135deg, #F5E6CC 0%, #87CEEB 100%);
+}
+
+.gradient-mint-sand {
+  background: linear-gradient(135deg, #98D8C8 0%, #F5E6CC 100%);
+}
+
+.gradient-soft {
+  background: linear-gradient(180deg, #FAFAFA 0%, #f0f7f4 50%, #FAFAFA 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #87CEEB 0%, #98D8C8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-glow {
+  box-shadow: 0 4px 24px -2px rgba(135, 206, 235, 0.12), 0 2px 8px -2px rgba(152, 216, 200, 0.08);
+}
+
+.card-glow:hover {
+  box-shadow: 0 8px 32px -4px rgba(135, 206, 235, 0.2), 0 4px 16px -4px rgba(152, 216, 200, 0.12);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+/* Additional styles for dashboard */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
