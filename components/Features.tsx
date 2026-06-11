@@ -1,93 +1,112 @@
 const features = [
   {
-    title: "Deep-Learning Prediction Engine",
+    title: "Deep-Learning Predictions",
     description:
-      "Neural networks trained on years of historical price data learn to detect patterns invisible to the human eye — then surface them as actionable signals.",
+      "Proprietary neural networks trained on years of market data detect patterns invisible to the human eye — then surface them as actionable signals weeks ahead.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
       </svg>
     ),
+    accent: "flame-orange",
   },
   {
-    title: "Social Sentiment Analysis",
+    title: "Alternative Data Analysis",
     description:
-      "Our models scan live social media and news feeds in real time, quantifying crowd mood shifts before they hit the price chart.",
+      "We go beyond price charts. Our models ingest executive speech patterns, supply chain logistics, satellite data, and social sentiment to build a complete market picture.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738.167l-.867.867M13.193 8.193l1.135-1.135a2.252 2.252 0 00.421-.585l1.08-2.16a.414.414 0 01.663-.107.827.827 0 00.812.21l1.273-.363a.89.89 0 01.738.167l.867.867M7.5 21h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 005.25 9.75v9a2.25 2.25 0 002.25 2.25z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
       </svg>
     ),
+    accent: "magenta",
   },
   {
-    title: "Simple Buy & Sell Signals",
+    title: "Plain-English Explanations",
     description:
-      "No charts, no indicators, no jargon. Each signal is a clear buy or sell recommendation with a confidence score and a plain-language rationale.",
+      "Every signal comes with a human-readable rationale. You'll know exactly why the model is bullish or bearish — no PhD required.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
       </svg>
     ),
+    accent: "acid-green",
   },
   {
-    title: "Probability-Backed Confidence",
+    title: "Real-Time Signals",
     description:
-      "Every signal comes with a model confidence score so you can size your positions intelligently and manage risk on your own terms.",
+      "Markets move fast. Goon's models run continuously, pushing fresh signals to your dashboard the moment a high-probability setup forms.",
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+      </svg>
+    ),
+    accent: "flame-orange",
+  },
+  {
+    title: "Built-In Risk Management",
+    description:
+      "Every signal includes a confidence score so you can size positions appropriately. See probability-backed conviction levels before you commit capital.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
       </svg>
     ),
+    accent: "magenta",
   },
   {
-    title: "Alternative Data Sources",
+    title: "Dead Simple to Use",
     description:
-      "Beyond price and volume, our models ingest social media velocity, news sentiment, and crowd positioning data for a fuller market picture.",
+      "No terminal, no Bloomberg, no coding. Sign up, pick your watchlist, and get signals delivered to a clean dashboard. Start trading with an edge in minutes.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
       </svg>
     ),
-  },
-  {
-    title: "Retail-Friendly Pricing",
-    description:
-      "Institutional-grade AI should not cost institutional money. Goon is priced for individual traders, not hedge funds.",
-    icon: (
-      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-      </svg>
-    ),
+    accent: "acid-green",
   },
 ];
 
+const accentColors: Record<string, { bg: string; text: string; border: string }> = {
+  "flame-orange": { bg: "bg-flame-orange/10", text: "text-flame-orange", border: "border-flame-orange/20" },
+  magenta: { bg: "bg-magenta/10", text: "text-magenta", border: "border-magenta/20" },
+  "acid-green": { bg: "bg-acid-green/10", text: "text-acid-green", border: "border-acid-green/20" },
+};
+
 export default function Features() {
   return (
-    <section id="features" className="py-20 md:py-28 bg-ink-black">
+    <section id="features" className="py-20 md:py-28 gradient-soft lattice-pattern">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4 text-white">
-            Everything you need to trade smarter
+            Everything you need to{" "}
+            <span className="text-gradient">trade smarter</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Goon combines cutting-edge machine learning with alternative data sources to
-            give retail traders an edge that was once reserved for quant desks.
+          <p className="text-gray-400 text-lg max-w-xl mx-auto">
+            Institutional-grade AI, built for retail traders. No experience required.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature) => (
-            <div
-              key={feature.title}
-              className="group p-6 rounded-2xl border border-white/5 hover:border-indigo/30 bg-white/[0.02] hover:bg-white/[0.04] card-glow transition-all duration-300"
-            >
-              <div className="w-12 h-12 rounded-xl gradient-sky-mint flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform duration-300">
-                {feature.icon}
+          {features.map((feature) => {
+            const colors = accentColors[feature.accent];
+            return (
+              <div
+                key={feature.title}
+                className="bg-white/[0.03] rounded-2xl p-6 card-glow border border-white/5 hover:border-white/10 transition-all"
+              >
+                <div className={`w-12 h-12 rounded-xl ${colors.bg} border ${colors.border} flex items-center justify-center mb-4 ${colors.text}`}>
+                  {feature.icon}
+                </div>
+                <h3 className="font-heading text-lg font-bold text-white mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
-              <h3 className="font-heading text-lg font-semibold mb-2 text-white">{feature.title}</h3>
-              <p className="text-sm text-gray-400 leading-relaxed">{feature.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

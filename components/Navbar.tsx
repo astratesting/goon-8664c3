@@ -47,38 +47,52 @@ export default function Navbar() {
             href="/auth/signup"
             className="gradient-sky-mint text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:opacity-90 transition-opacity"
           >
-            Get Started
+            Get early access
           </Link>
         </div>
 
+        {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 text-gray-400"
+          className="md:hidden text-gray-400 hover:text-white"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
-          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            {mobileOpen ? (
+          {mobileOpen ? (
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
+            </svg>
+          ) : (
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
+            </svg>
+          )}
         </button>
       </div>
 
+      {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-ink-black/95 backdrop-blur-lg border-t border-white/5 px-6 py-6 space-y-4">
-          <a href="#features" onClick={() => setMobileOpen(false)} className="block text-gray-300 hover:text-white">Features</a>
-          <a href="#how-it-works" onClick={() => setMobileOpen(false)} className="block text-gray-300 hover:text-white">How It Works</a>
-          <a href="#pricing" onClick={() => setMobileOpen(false)} className="block text-gray-300 hover:text-white">Pricing</a>
-          <a href="#faq" onClick={() => setMobileOpen(false)} className="block text-gray-300 hover:text-white">FAQ</a>
-          <Link href="/auth/signin" onClick={() => setMobileOpen(false)} className="block text-gray-300 hover:text-white">Sign in</Link>
+        <div className="md:hidden bg-ink-black/95 backdrop-blur-lg border-t border-white/5 px-6 py-4 space-y-4">
+          <a href="#features" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-400 hover:text-white transition-colors">
+            Features
+          </a>
+          <a href="#how-it-works" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-400 hover:text-white transition-colors">
+            How It Works
+          </a>
+          <a href="#pricing" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-400 hover:text-white transition-colors">
+            Pricing
+          </a>
+          <a href="#faq" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-400 hover:text-white transition-colors">
+            FAQ
+          </a>
+          <Link href="/auth/signin" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-400 hover:text-white transition-colors">
+            Sign in
+          </Link>
           <Link
             href="/auth/signup"
             onClick={() => setMobileOpen(false)}
-            className="block text-center gradient-sky-mint text-white font-semibold py-3 rounded-xl"
+            className="block gradient-sky-mint text-white text-sm font-semibold px-5 py-2.5 rounded-xl text-center hover:opacity-90 transition-opacity"
           >
-            Get Started
+            Get early access
           </Link>
         </div>
       )}

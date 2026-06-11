@@ -36,28 +36,28 @@ export default function CTA() {
   return (
     <section className="py-20 md:py-28 bg-ink-black relative overflow-hidden data-grid">
       <div className="absolute inset-0 gradient-hero opacity-50" />
-      <div className="absolute top-1/3 left-1/4 w-80 h-80 bg-indigo/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-cyan/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/3 left-1/4 w-80 h-80 bg-flame-orange/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-magenta/10 rounded-full blur-3xl" />
 
       <div className="max-w-2xl mx-auto px-6 text-center relative">
         <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4 text-white">
           Ready to trade with an edge?
         </h2>
         <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-          Join the waitlist to get early access and be the first to know when
+          Join the waitlist for early access. Be the first to know when
           new models go live.
         </p>
 
         {status === "success" ? (
-          <div className="bg-electric-teal/10 border border-electric-teal/30 rounded-2xl p-6 max-w-md mx-auto">
-            <div className="w-12 h-12 gradient-sky-mint rounded-full flex items-center justify-center mx-auto mb-3">
-              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="bg-acid-green/10 border border-acid-green/30 rounded-2xl p-6">
+            <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-acid-green/10 flex items-center justify-center">
+              <svg className="w-6 h-6 text-acid-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <p className="font-semibold text-white mb-1">{message}</p>
-            <p className="text-sm text-gray-400">
-              We will reach out when your spot is ready.
+            <p className="text-white font-semibold text-lg">{message}</p>
+            <p className="text-gray-400 text-sm mt-1">
+              We&apos;ll notify you when it&apos;s your turn.
             </p>
           </div>
         ) : (
@@ -66,26 +66,26 @@ export default function CTA() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
               placeholder="Enter your email"
-              className="flex-1 px-5 py-3.5 rounded-xl bg-white/5 border border-white/10 focus:border-indigo focus:ring-2 focus:ring-indigo/20 outline-none transition-all text-sm text-white placeholder:text-gray-500"
+              required
+              className="flex-1 px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-gray-500 focus:outline-none focus:border-flame-orange/50 focus:ring-1 focus:ring-flame-orange/30 transition-all"
             />
             <button
               type="submit"
               disabled={status === "loading"}
-              className="gradient-sky-mint text-white font-semibold px-6 py-3.5 rounded-xl hover:opacity-90 transition-opacity disabled:opacity-50 whitespace-nowrap"
+              className="gradient-sky-mint text-white font-semibold px-8 py-4 rounded-xl hover:opacity-90 transition-opacity disabled:opacity-50 whitespace-nowrap"
             >
-              {status === "loading" ? "Joining\u2026" : "Join waitlist"}
+              {status === "loading" ? "Joining..." : "Join waitlist"}
             </button>
           </form>
         )}
 
         {status === "error" && (
-          <p className="text-sm text-red-400 mt-3">{message}</p>
+          <p className="text-red-400 text-sm mt-3">{message}</p>
         )}
 
-        <p className="text-xs text-gray-500 mt-4">
-          No spam, ever. Unsubscribe anytime.
+        <p className="text-gray-600 text-xs mt-6">
+          No spam. Unsubscribe anytime. We respect your inbox.
         </p>
       </div>
     </section>

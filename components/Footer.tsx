@@ -10,7 +10,7 @@ export default function Footer() {
               Goon
             </Link>
             <span className="text-sm text-gray-500">
-              AI-powered trade signals for retail traders.
+              AI-powered stock predictions for retail traders.
             </span>
           </div>
 
